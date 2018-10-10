@@ -1,19 +1,9 @@
-body,
-button,
-input,
-select,
-optgroup,
-textarea {
-  color: $color__text-main;
-  font-family: $font__main;
-  @include font-size(1);
-  line-height: $font__line-height-body;
-}
-
 html {
   font-size: 62.5%;
 }
+@font-face {
+  font-family: questrian;
+  src: url(./font/Questrian.ttf.woff);
+}
 
-@import "headings";
 
-@import "copy";
