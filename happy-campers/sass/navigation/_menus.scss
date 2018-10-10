@@ -1,107 +1,60 @@
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
+	display: flex;
 	width: 100%;
+	background-color: $dark-fern;
+	font-family: questrian;
+	justify-content: flex-end;
+	font-size: 1.8rem;
+	flex-wrap: wrap;
 
 	ul {
-		display: none;
+		display: flex;
+		flex-wrap: wrap;
 		list-style: none;
+		text-decoration: none;
 		margin: 0;
-		padding-left: 0;
-
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 100%;
-			left: -999em;
-			z-index: 99999;
-
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
-
-			a {
-				width: 200px;
-			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
-		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
+		margin-right: 40px;
+		padding: 0;
 	}
 
 	li {
-		float: left;
-		position: relative;
-
-		&:hover > a,
-		&.focus > a {
+		padding: 10px;
+		text-align: center;
+		text-transform: uppercase;
+		cursor: pointer;
+		white-space: nowrap;
+		a {
+			color: white;
+			text-decoration: none;
 		}
 	}
+	li:hover {
+		background-color: rgba(255, 255, 255, 0.3);
+	}
 
-	a {
-		display: block;
+	.home-button {
+		-webkit-clip-path: polygon(
+			100% 0,
+			95% 50%,
+			100% 100%,
+			0% 100%,
+			5% 50%,
+			0% 0%
+		);
+		clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+		white-space: nowrap;
 		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
-}
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
-
-.comment-navigation,
-.posts-navigation,
-.post-navigation {
-
-	.site-main & {
-		margin: 0 0 1.5em;
-		overflow: hidden;
-	}
-
-	.nav-previous {
-		float: left;
-		width: 50%;
-	}
-
-	.nav-next {
-		float: right;
-		text-align: right;
-		width: 50%;
+		background-color: $potters-clay;
+		margin-right: auto;
+		margin-left: 40px;
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+		padding: 0 20px 0 20px;
+		a {
+			color: $casablanca;
+		}
+		li:hover {
+			background-color: rgba(255, 255, 255, 0);
+		}
 	}
 }
