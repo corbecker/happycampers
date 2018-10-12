@@ -1,0 +1,37 @@
+.features {
+  display: flex;
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  .feature {
+    background: white;
+    border: 10px solid white;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    max-width: 400px;
+    max-height: 240px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    position: relative;
+    margin-bottom: 30px;
+
+    &:hover {
+      img {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+    img {
+      max-width: 100%;
+      transition: -webkit-transform 0.3s ease-out;
+      transition: transform 0.3s ease-out;
+      transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    }
+  }
+}

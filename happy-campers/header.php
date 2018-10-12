@@ -4,20 +4,21 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
-
     <?php wp_head(); ?>
 </head>
 
 <body>
-<div id="page" class="site">
-
-    <header id="masthead" class="site-header">
-        <nav id="site-navigation" class="main-navigation">
+    <header>
+        <nav class="main-navigation">
             <ul class="home-button">
                 <li>
                     <a href=<?php echo get_home_url()?>><?php echo get_bloginfo('name'); ?></a>
                 </li>
             </ul>
+            <div class="icons">
+                <a href="https://www.facebook.com/ashtreepethotel/"><i class="fa fa-facebook-square icon" style="font-size:30px;"></i></a>
+                <a href="https://www.instagram.com/aleidas_pet_hotel/"><i class="fa fa-instagram icon" style="font-size:30px;"></i></a>
+            </div>
             <?php
             wp_nav_menu(
                 array(
@@ -27,8 +28,5 @@
                 )
             );
             ?>
-        </nav><!-- #site-navigation -->
-
-    </header><!-- #masthead -->
-
-    <div id="content" class="site-content">
+        </nav>
+    </header>

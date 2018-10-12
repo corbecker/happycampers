@@ -1,8 +1,5 @@
 (function() {
     function castParallax() {
-        var opThresh = 350;
-        var opFactor = 750;
-
         window.addEventListener("scroll", function(event) {
             var top = this.pageYOffset;
 
@@ -20,25 +17,8 @@
         });
     }
 
-    function dispelParallax() {
-        $("#nonparallax").css("display", "block");
-        $("#parallax").css("display", "none");
-        console.log("jcsnkjfnc");
-    }
-
     function startSite() {
-        console.log("yippee");
-        var platform = navigator.platform.toLowerCase();
-        var userAgent = navigator.userAgent.toLowerCase();
-
-        if (
-            platform.indexOf("ipad") != -1 ||
-            platform.indexOf("iphone") != -1
-        ) {
-            dispelParallax();
-        } else {
-            castParallax();
-        }
+        castParallax();
     }
     startSite();
 })();
