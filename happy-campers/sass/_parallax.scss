@@ -1,5 +1,6 @@
 #parallax {
   display: block;
+  top: 50px;
 }
 
 .keyart {
@@ -60,7 +61,7 @@
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 654px) {
   .keyart,
   .keyart_layer {
     /* height: 400px;*/
@@ -71,4 +72,8 @@
   #logo {
     top: 120px;
   }
+  #parallax {
+    /* top: 100px;*/
+  }
 }
+

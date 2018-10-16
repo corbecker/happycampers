@@ -243,7 +243,8 @@ summary {
 # Parallax
 --------------------------------------------------------------*/
 #parallax {
-  display: block; }
+  display: block;
+  top: 50px; }
 
 .keyart {
   position: relative;
@@ -300,7 +301,7 @@ summary {
   #logo img {
     width: 100%; }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 654px) {
   .keyart,
   .keyart_layer {
     /* height: 400px;*/ }
@@ -309,7 +310,10 @@ summary {
     position: absolute; }
 
   #logo {
-    top: 120px; } }
+    top: 120px; }
+
+  #parallax {
+    /* top: 100px;*/ } }
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -373,8 +377,9 @@ a {
   font-size: 1.8rem;
   flex-wrap: wrap;
   position: fixed;
-  top: 0;
-  z-index: 1; }
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  top: 0px; }
   .main-navigation ul {
     display: flex;
     flex-wrap: wrap;
@@ -383,6 +388,9 @@ a {
     margin: 0;
     margin-right: 40px;
     padding: 0; }
+    .main-navigation ul > .current-menu-item a,
+    .main-navigation ul .current-page-ancestor a {
+      color: #f6c745; }
   .main-navigation li {
     padding: 10px;
     margin: 5px;
@@ -418,18 +426,80 @@ a {
     align-items: center;
     width: 100px; }
 
-body.customize-support .main-navigation {
-  top: 32px; }
+@media only screen and (max-width: 720px) {
+  .main-navigation {
+    justify-content: space-around; }
+    .main-navigation ul {
+      margin-right: 0px; } }
+.masthead {
+  position: relative;
+  background: url("images/backgrounds/masthead.jpg") top left repeat;
+  height: 200px;
+  margin-top: 50px; }
+  .masthead .container {
+    height: 100%; }
+  .masthead:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #000, transparent);
+    opacity: 0.6; }
+  .masthead h1 {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: "questrian";
+    color: #f6c745;
+    letter-spacing: 3px;
+    padding-left: 30px; }
 
-@media screen and (max-width: 782px) {
-  body.customize-support .main-navigation {
-    top: 46px; } }
+.sub-navigation {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #d3d3d3;
+  font-family: questrian;
+  font-size: 1.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1; }
+  .sub-navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 0; }
+    .sub-navigation ul > .current-menu-item {
+      background-color: rgba(0, 0, 0, 0.2); }
+  .sub-navigation li {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap; }
+    .sub-navigation li > .sub-menu {
+      display: none; }
+    .sub-navigation li a {
+      color: rgba(0, 26, 8, 0.8);
+      text-decoration: none; }
+  .sub-navigation li:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
+
+@media only screen and (max-width: 654px) {
+  .masthead {
+    margin-top: 100px; } }
 .main {
   background-color: #e1eef0;
   background-image: url("images/topography.svg");
   position: relative;
-  padding-bottom: 3rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+  padding-bottom: 3rem; }
 
 .container {
   position: relative;
@@ -513,9 +583,7 @@ body.customize-support .main-navigation {
     flex-direction: column;
     max-width: 400px;
     align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 30px;
+    padding: 30px;
     border-radius: 3px; }
 
 /*footer layout*/
@@ -528,7 +596,6 @@ body.customize-support .main-navigation {
   border-top: 1px solid rgba(0, 0, 0, 0.2); }
 
 footer {
-  overflow: auto;
   background-color: #0a4d1e;
   position: relative;
   bottom: 0;
@@ -583,8 +650,8 @@ footer {
   padding: 10px;
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
-  /* border: 0px;*/
   border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
   transition: all 0.2s; }
   .btn-clear:hover {
     -webkit-transform: translateY(-2px);

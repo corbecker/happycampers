@@ -1,0 +1,79 @@
+.masthead {
+  position: relative;
+  background: url("images/backgrounds/masthead.jpg") top left repeat;
+  height: 200px;
+  margin-top: 50px;
+  .container {
+    height: 100%;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #000, transparent);
+    opacity: 0.6;
+  }
+  h1 {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: "questrian";
+    color: $casablanca;
+    letter-spacing: 3px;
+    padding-left: 30px;
+  }
+}
+.sub-navigation {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #d3d3d3;
+  font-family: questrian;
+  font-size: 1.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding: 0;
+    & > .current-menu-item {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  li {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+    & > .sub-menu {
+      display: none;
+    }
+
+    a {
+      color: rgba(0, 26, 8, 0.8);
+      text-decoration: none;
+    }
+  }
+  li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media only screen and (max-width: 654px) {
+  .masthead {
+    margin-top: 100px;
+  }
+}

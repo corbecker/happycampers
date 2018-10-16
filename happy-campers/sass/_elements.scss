@@ -26,6 +26,7 @@
   color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
   border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
   transition: all 0.2s;
   &:hover {
     -webkit-transform: translateY(-2px);

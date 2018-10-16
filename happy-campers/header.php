@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <nav class="main-navigation">
+        <nav id="navheader" class="main-navigation">
             <ul class="home-button">
                 <li>
                     <a href=<?php echo get_home_url()?>><?php echo get_bloginfo('name'); ?></a>

@@ -41,9 +41,6 @@ get_header();
             <img src="<?php bloginfo('template_directory'); ?>/images/grooming.jpg" alt="dog_grooming"/>
         </div>
     </section>
-    <section class="container testimonials">
-        <h1>Testimonials</h1>
-    </section>
 </div>
 <?php
 get_footer();
