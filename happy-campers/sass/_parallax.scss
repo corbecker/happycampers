@@ -1,19 +1,16 @@
-.keyart,
-.keyart_layer {
-  height: 800px;
-}
-
 #parallax {
   display: block;
 }
 
 .keyart {
   position: relative;
+  height: 550px;
 }
 
 .keyart_layer {
-  background-position: bottom center;
-  background-size: auto 838px;
+  height: 550px;
+  background-position: top center;
+  background-size: auto 550px;
   background-repeat: repeat-x;
   width: 100%;
   position: absolute;
@@ -49,4 +46,29 @@
 #keyart-8 {
   background-image: url("images/parallax_opt/parallax8@2x.png");
 }
+#logo {
+  position: absolute;
+  max-width: 400px;
+  min-width: 300px;
+  top: 100px;
+  margin: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  img {
+    width: 100%;
+  }
+}
 
+@media only screen and (max-width: 767px) {
+  .keyart,
+  .keyart_layer {
+    /* height: 400px;*/
+  }
+  .keyart_layer.parallax {
+    position: absolute;
+  }
+  #logo {
+    top: 120px;
+  }
+}

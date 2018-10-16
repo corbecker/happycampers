@@ -28,6 +28,10 @@ html {
 *::after {
   box-sizing: inherit; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 /**
  * Use a more readable tab size (opinionated).
  */
@@ -238,19 +242,17 @@ summary {
 /*--------------------------------------------------------------
 # Parallax
 --------------------------------------------------------------*/
-.keyart,
-.keyart_layer {
-  height: 800px; }
-
 #parallax {
   display: block; }
 
 .keyart {
-  position: relative; }
+  position: relative;
+  height: 550px; }
 
 .keyart_layer {
-  background-position: bottom center;
-  background-size: auto 838px;
+  height: 550px;
+  background-position: top center;
+  background-size: auto 550px;
   background-repeat: repeat-x;
   width: 100%;
   position: absolute; }
@@ -286,6 +288,28 @@ summary {
 #keyart-8 {
   background-image: url("images/parallax_opt/parallax8@2x.png"); }
 
+#logo {
+  position: absolute;
+  max-width: 400px;
+  min-width: 300px;
+  top: 100px;
+  margin: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  #logo img {
+    width: 100%; }
+
+@media only screen and (max-width: 767px) {
+  .keyart,
+  .keyart_layer {
+    /* height: 400px;*/ }
+
+  .keyart_layer.parallax {
+    position: absolute; }
+
+  #logo {
+    top: 120px; } }
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -309,16 +333,19 @@ body {
   font-family: questrian;
   src: url(./font/Questrian.ttf.woff); }
 h1 {
-  font-size: 2.6rem; }
+  font-size: 4.8rem; }
 
 h2 {
-  font-size: 2.4rem; }
+  font-size: 3.6rem; }
 
 h3 {
-  font-size: 2.2rem; }
+  font-size: 2.8rem; }
+
+h4 {
+  font-size: 1.8rem; }
 
 p {
-  font-size: 1.8rem; }
+  font-size: 1.6rem; }
 
 caption {
   font-size: 1.4rem; }
@@ -363,11 +390,13 @@ a {
     text-transform: uppercase;
     cursor: pointer;
     white-space: nowrap; }
+    .main-navigation li > .sub-menu {
+      display: none; }
     .main-navigation li a {
       color: white;
       text-decoration: none; }
-  .main-navigation li:hover {
-    background-color: rgba(255, 255, 255, 0.3); }
+  .main-navigation li:hover a {
+    color: #f6c745; }
   .main-navigation .home-button {
     -webkit-clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
     clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
@@ -420,34 +449,76 @@ body.customize-support .main-navigation {
 
 .features {
   display: flex;
-  -webkit-transform: translateY(-50px);
-  transform: translateY(-50px);
   flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px); }
   .features .feature {
     background: white;
-    border: 10px solid white;
     text-align: center;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     overflow: hidden;
     max-width: 400px;
-    max-height: 240px;
-    color: white;
     font-weight: bold;
     font-size: 2em;
     text-align: center;
     position: relative;
-    margin-bottom: 30px; }
-    .features .feature:hover img {
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1); }
+    margin-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    transition: all 0.3s; }
+    .features .feature:hover {
+      -webkit-transform: scale(1.02);
+      transform: scale(1.02);
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
     .features .feature img {
       max-width: 100%;
       transition: -webkit-transform 0.3s ease-out;
       transition: transform 0.3s ease-out;
       transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out; }
+    .features .feature h1 {
+      /* padding-bottom: 10px;*/
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: questrian;
+      letter-spacing: 2px;
+      font-size: 3rem; }
 
+.testimonials {
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px); }
+  .testimonials h1 {
+    font-family: questrian;
+    margin: 0;
+    text-align: center; }
+
+.cta-section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: #001a08;
+  padding-bottom: 30px; }
+  .cta-section h3 {
+    font-family: questrian;
+    color: #f6c745;
+    letter-spacing: 2px;
+    margin-bottom: 20px; }
+  .cta-section .cta {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px; }
+
+/*footer layout*/
 .copyright {
   position: relative;
   bottom: 0;
@@ -473,7 +544,7 @@ footer {
       footer .footer-container .footer-widget h3 {
         color: #f6c745;
         font-family: questrian;
-        letter-spacing: 1px; }
+        letter-spacing: 2px; }
       footer .footer-container .footer-widget ul {
         list-style: none;
         padding: 0; }
@@ -486,3 +557,37 @@ footer {
         color: #f6c745; }
       footer .footer-container .footer-widget a {
         color: rgba(255, 255, 255, 0.8); }
+
+/*reusable elements (buttons etc)*/
+.btn {
+  display: block;
+  background-color: rgba(246, 199, 69, 0.84);
+  padding: 10px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 3px;
+  transition: all 0.2s; }
+  .btn:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px); }
+
+.card {
+  background: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  padding: 20px; }
+
+.btn-clear {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  /* border: 0px;*/
+  border-radius: 2px;
+  transition: all 0.2s; }
+  .btn-clear:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    border-color: #f6c745;
+    color: #f6c745; }

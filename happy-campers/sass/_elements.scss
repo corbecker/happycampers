@@ -1,0 +1,36 @@
+.btn {
+  display: block;
+  background-color: rgba(246, 199, 69, 0.84);
+  padding: 10px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 3px;
+  transition: all 0.2s;
+  &:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+}
+
+.card {
+  background: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.btn-clear {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s;
+  &:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    border-color: $casablanca;
+    color: $casablanca;
+  }
+}

@@ -1,37 +1,82 @@
 .features {
   display: flex;
-  -webkit-transform: translateY(-50px);
-  transform: translateY(-50px);
   flex-flow: row wrap;
   justify-content: space-around;
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
 
   .feature {
     background: white;
-    border: 10px solid white;
     text-align: center;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     overflow: hidden;
     max-width: 400px;
-    max-height: 240px;
-    color: white;
     font-weight: bold;
     font-size: 2em;
     text-align: center;
     position: relative;
     margin-bottom: 30px;
-
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    transition: all 0.3s;
     &:hover {
-      img {
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-      }
+      -webkit-transform: scale(1.02);
+      transform: scale(1.02);
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
     }
+
     img {
       max-width: 100%;
       transition: -webkit-transform 0.3s ease-out;
       transition: transform 0.3s ease-out;
       transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     }
+    h1 {
+      /* padding-bottom: 10px;*/
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: questrian;
+      letter-spacing: 2px;
+      font-size: 3rem;
+    }
+  }
+}
+
+.testimonials {
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+  h1 {
+    font-family: questrian;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.cta-section {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: #001a08;
+  padding-bottom: 30px;
+  h3 {
+    font-family: questrian;
+    color: $casablanca;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  .cta {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
   }
 }

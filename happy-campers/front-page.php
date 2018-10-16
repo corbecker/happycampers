@@ -11,32 +11,39 @@ get_header();
     <div class="keyart_layer parallax" id="keyart-6" data-speed="49"></div>
     <div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>
     <div class="keyart_layer " id="keyart-8" data-speed="100"></div>
+    <div class="" id="logo" data-speed="100"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"/></div>
+</div>
+<div class="cta-section">
+    <div class="cta-section">
+        <div class="cta">
+            <h3>New Camper?</h3>
+            <button class="btn-clear">Take a Tour</button>
+        </div>
+        <div class="divider"></div>
+        <div class="cta">
+            <h3>Existing Camper</h3>
+            <button class="btn-clear">Make Reservation</button>
+        </div>
+    </div>
 </div>
 <div class="main">
-
     <section class="features container">
         <div class="feature">
-            <img src="<?php bloginfo('template_directory'); ?>/images/boarding.jpg" alt="dog_boarding"/>
-            <div class="centered">Dog Boarding</div>
+            <h1>Dog Boarding</h1>
+            <img src="<?php bloginfo('template_directory'); ?>/images/boarding_2.jpg" alt="dog_boarding"/>
         </div>
         <div class="feature">
-            <img src="<?php bloginfo('template_directory'); ?>/images/boarding.jpg" alt="dog_boarding"/>
-            <div class="centered">Dog Daycare</div>
+            <h1>Dog Daycare</h1>
+            <img src="<?php bloginfo('template_directory'); ?>/images/daycare_2.jpg" alt="dog_daycare"/>
         </div>
         <div class="feature">
-            <img src="<?php bloginfo('template_directory'); ?>/images/boarding.jpg" alt="dog_boarding"/>
-            <div class="centered">Cat Sitting</div>
+            <h1>Grooming</h1>
+            <img src="<?php bloginfo('template_directory'); ?>/images/grooming.jpg" alt="dog_grooming"/>
         </div>
     </section>
-    <section class="container">
-        <h1>hello</h1>
-        <p style="font-size: 32px;">hello</p>
-        <h2>hello</h2>
-        <h3>hello</h3>
-        <p>hello</p>
-
+    <section class="container testimonials">
+        <h1>Testimonials</h1>
     </section>
-
 </div>
 <?php
 get_footer();
