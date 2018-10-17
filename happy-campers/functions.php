@@ -22,6 +22,8 @@ function happy_campers_scripts()
     wp_enqueue_style('happy-campers-style', get_stylesheet_uri());
 
     wp_enqueue_script('my-script', get_template_directory_uri() . '/js/parallax.js', array(), true, true);
+
+    wp_enqueue_script('scripts', get_template_directory_uri() . '/js/scripts.js', array(), true, true);
 }
 
 add_action('wp_enqueue_scripts', 'happy_campers_scripts');
@@ -50,6 +52,17 @@ function widgetsInit()
     'name' => 'Footer Sidebar 3',
     'id' => 'footer-sidebar-3',
     'description' => 'Appears in the footer area',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+    ));
+
+
+    register_sidebar(array(
+    'name' => 'General Sidebar 1',
+    'id' => 'general-sidebar-1',
+    'description' => 'Appears in the right hand sidebar.',
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget' => '</aside>',
     'before_title' => '<h3 class="widget-title">',

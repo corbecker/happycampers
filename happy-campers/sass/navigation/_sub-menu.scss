@@ -36,6 +36,7 @@
   font-size: 1.8rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1;
+  flex-direction: column;
 
   ul {
     display: flex;
@@ -70,10 +71,41 @@
   li:hover {
     background-color: rgba(0, 0, 0, 0.2);
   }
+
+  .toggle {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 654px) {
   .masthead {
     margin-top: 100px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .main-navigation {
+    justify-content: space-around;
+    ul {
+      margin-right: 0px;
+    }
+  }
+  .sub-navigation {
+    justify-content: center;
+    ul {
+      flex-direction: column;
+    }
+    .menu {
+      display: none;
+      &.show {
+        display: block;
+      }
+    }
+    .toggle {
+      display: block;
+    }
   }
 }

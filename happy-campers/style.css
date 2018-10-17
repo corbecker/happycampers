@@ -244,7 +244,8 @@ summary {
 --------------------------------------------------------------*/
 #parallax {
   display: block;
-  top: 50px; }
+  top: 50px;
+  overflow: hidden; }
 
 .keyart {
   position: relative;
@@ -465,7 +466,8 @@ a {
   font-family: questrian;
   font-size: 1.8rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 1; }
+  z-index: 1;
+  flex-direction: column; }
   .sub-navigation ul {
     display: flex;
     flex-wrap: wrap;
@@ -491,10 +493,31 @@ a {
       text-decoration: none; }
   .sub-navigation li:hover {
     background-color: rgba(0, 0, 0, 0.2); }
+  .sub-navigation .toggle {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    display: none; }
 
 @media only screen and (max-width: 654px) {
   .masthead {
     margin-top: 100px; } }
+@media only screen and (max-width: 720px) {
+  .main-navigation {
+    justify-content: space-around; }
+    .main-navigation ul {
+      margin-right: 0px; }
+
+  .sub-navigation {
+    justify-content: center; }
+    .sub-navigation ul {
+      flex-direction: column; }
+    .sub-navigation .menu {
+      display: none; }
+      .sub-navigation .menu.show {
+        display: block; }
+    .sub-navigation .toggle {
+      display: block; } }
 .main {
   background-color: #e1eef0;
   background-image: url("images/topography.svg");
@@ -506,8 +529,6 @@ a {
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 3rem;
-  padding-right: 3rem;
   padding: 20px; }
 
 .centered {
@@ -593,7 +614,8 @@ a {
   width: 100%;
   text-align: center;
   font-size: 1.2rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.2); }
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.2); }
 
 footer {
   background-color: #0a4d1e;
@@ -658,3 +680,32 @@ footer {
     transform: translateY(-2px);
     border-color: #f6c745;
     color: #f6c745; }
+
+.main-sidebar {
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "content content side";
+  -ms-grid-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 1fr auto;
+  grid-template-rows: 1fr auto;
+  grid-gap: 10px; }
+  .main-sidebar .content {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: content; }
+  .main-sidebar .sidebar {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: side; }
+
+@media only screen and (max-width: 720px) {
+  .main-sidebar {
+    grid-template-areas: "content" "side";
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    height: 100vh; } }
