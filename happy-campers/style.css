@@ -684,7 +684,7 @@ footer {
 .main-sidebar {
   display: -ms-grid;
   display: grid;
-  grid-template-areas: "content content side";
+  grid-template-areas: "content side";
   -ms-grid-columns: 2fr 1fr;
   grid-template-columns: 2fr 1fr;
   -ms-grid-rows: 1fr auto;
@@ -693,16 +693,15 @@ footer {
   .main-sidebar .content {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
     grid-area: content; }
   .main-sidebar .sidebar {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
     grid-area: side; }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1000px) {
   .main-sidebar {
-    grid-template-areas: "content" "side";
+    grid-template-areas: "content content" "side side";
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto auto;
