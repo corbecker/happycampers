@@ -16,7 +16,12 @@
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: side;
+    padding: 20px;
   }
+}
+
+.main {
+  padding-top: 40px;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -29,6 +34,57 @@
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
     grid-gap: 10px;
-    height: 100vh;
   }
+  .main {
+    padding-top: 0;
+  }
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+
+/**
+ * Tabs
+ */
+.tabs {
+  display: flex;
+  flex-wrap: wrap; /* make sure it wraps*/
+}
+
+.tab {
+  border-top: 1px solid #d3d3d3;
+}
+.tabs label {
+  order: 1; /* Put the labels first*/
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #fff;
+  font-weight: bold;
+  transition: background ease 0.2s;
+}
+.tabs .tab {
+  order: 99; /* Put the tabs last*/
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+.tabs input[type="radio"] {
+  display: none;
+}
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+  border-bottom: 3px solid $dark-fern;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block;
 }

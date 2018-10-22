@@ -24,7 +24,7 @@
     font-family: "questrian";
     color: $casablanca;
     letter-spacing: 3px;
-    padding-left: 30px;
+    padding-left: 20px;
   }
 }
 .sub-navigation {
@@ -39,14 +39,12 @@
   flex-direction: column;
 
   ul {
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     text-decoration: none;
-    margin: 0;
-    margin-right: 40px;
-    margin-left: 40px;
-    padding: 0;
     & > .current-menu-item {
       background-color: rgba(0, 0, 0, 0.2);
     }
@@ -54,7 +52,6 @@
 
   li {
     padding: 10px;
-    margin: 5px;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
@@ -102,6 +99,10 @@
       display: none;
       &.show {
         display: block;
+        background-color: white;
+        li {
+          border-bottom: 1px solid #d3d3d3;
+        }
       }
     }
     .toggle {

@@ -341,10 +341,14 @@ h1 {
   font-size: 4.8rem; }
 
 h2 {
-  font-size: 3.6rem; }
+  font-size: 3.6rem;
+  margin-bottom: 10px;
+  font-weight: 400; }
 
 h3 {
-  font-size: 2.8rem; }
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  font-weight: 400; }
 
 h4 {
   font-size: 1.8rem; }
@@ -456,7 +460,7 @@ a {
     font-family: "questrian";
     color: #f6c745;
     letter-spacing: 3px;
-    padding-left: 30px; }
+    padding-left: 20px; }
 
 .sub-navigation {
   display: flex;
@@ -469,19 +473,16 @@ a {
   z-index: 1;
   flex-direction: column; }
   .sub-navigation ul {
+    max-width: 1400px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    text-decoration: none;
-    margin: 0;
-    margin-right: 40px;
-    margin-left: 40px;
-    padding: 0; }
+    text-decoration: none; }
     .sub-navigation ul > .current-menu-item {
       background-color: rgba(0, 0, 0, 0.2); }
   .sub-navigation li {
     padding: 10px;
-    margin: 5px;
     text-align: center;
     text-transform: uppercase;
     cursor: pointer;
@@ -515,7 +516,10 @@ a {
     .sub-navigation .menu {
       display: none; }
       .sub-navigation .menu.show {
-        display: block; }
+        display: block;
+        background-color: white; }
+        .sub-navigation .menu.show li {
+          border-bottom: 1px solid #d3d3d3; }
     .sub-navigation .toggle {
       display: block; } }
 .main {
@@ -528,8 +532,7 @@ a {
   position: relative;
   max-width: 1400px;
   margin-left: auto;
-  margin-right: auto;
-  padding: 20px; }
+  margin-right: auto; }
 
 .centered {
   position: absolute;
@@ -587,6 +590,7 @@ a {
 
 .cta-section {
   position: relative;
+  margin-top: 10px;
   display: flex;
   width: 100%;
   align-items: center;
@@ -615,7 +619,8 @@ a {
   text-align: center;
   font-size: 1.2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  color: rgba(255, 255, 255, 0.2); }
+  color: rgba(255, 255, 255, 0.2);
+  padding: 20px; }
 
 footer {
   background-color: #0a4d1e;
@@ -697,7 +702,11 @@ footer {
   .main-sidebar .sidebar {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
-    grid-area: side; }
+    grid-area: side;
+    padding: 20px; }
+
+.main {
+  padding-top: 40px; }
 
 @media only screen and (max-width: 1000px) {
   .main-sidebar {
@@ -706,5 +715,56 @@ footer {
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
-    grid-gap: 10px;
-    height: 100vh; } }
+    grid-gap: 10px; }
+
+  .main {
+    padding-top: 0; }
+
+  .tabs .tab,
+  .tabs label {
+    order: initial; }
+
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem; } }
+/**
+ * Tabs
+ */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  /* make sure it wraps*/ }
+
+.tab {
+  border-top: 1px solid #d3d3d3; }
+
+.tabs label {
+  order: 1;
+  /* Put the labels first*/
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #fff;
+  font-weight: bold;
+  transition: background ease 0.2s; }
+
+.tabs .tab {
+  order: 99;
+  /* Put the tabs last*/
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff; }
+
+.tabs input[type="radio"] {
+  display: none; }
+
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+  border-bottom: 3px solid #0a4d1e; }
+
+.tabs input[type="radio"]:checked + label + .tab {
+  display: block; }
