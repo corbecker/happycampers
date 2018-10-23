@@ -1,10 +1,12 @@
 (function() {
-    function classToggle() {
-        const nav = document.getElementById("services-menu");
-
-        nav.classList.toggle("show");
-
-        console.log(nav);
+  function classToggle() {
+    if (document.getElementById("services-menu")) {
+      var nav = document.getElementById("services-menu");
+    } else {
+      var nav = document.getElementById("about-menu");
     }
-    document.querySelector(".toggle").addEventListener("click", classToggle);
+
+    nav.classList.toggle("show");
+  }
+  document.querySelector(".toggle").addEventListener("click", classToggle);
 })();

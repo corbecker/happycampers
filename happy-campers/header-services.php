@@ -4,7 +4,7 @@
     </div>
 </div>
 <nav class="sub-navigation">
-    <div class="">
+    <div>
         <ul class="toggle">
             <li class="fa fa-bars"></li>
         </ul>

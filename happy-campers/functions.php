@@ -76,3 +76,4 @@ add_action('widgets_init', 'widgetsInit');
 
     
 require_once('tabs-shortcode.php');
+require_once('hours-shortcode.php');

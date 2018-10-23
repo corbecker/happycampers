@@ -1,0 +1,40 @@
+.icon-location:before {
+  font-family: "FontAwesome";
+  content: "\f041";
+}
+
+.hoursBox {
+  background: #d3d3d3;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  .hoursContent {
+    padding: 20px 30px;
+  }
+  .hoursTitle {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+  }
+
+  .hours {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hours ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .hours ul:first-child {
+    font-weight: 700;
+  }
+
+  .hours ul:last-child {
+    font-weight: 100;
+  }
+
+  .hours ul li {
+    padding-bottom: 3px;
+  }
+}
