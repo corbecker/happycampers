@@ -71,3 +71,8 @@ function widgetsInit()
 }
 
 add_action('widgets_init', 'widgetsInit');
+
+// shortcodes
+
+    
+require_once('tabs-shortcode.php');
