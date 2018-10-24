@@ -7,8 +7,20 @@
   background: #d3d3d3;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
+  .address {
+    display: flex;
+    ul:first-of-type {
+      width: 30px;
+    }
+    li {
+      height: 30px;
+    }
+  }
+  ul {
+    list-style: none;
+  }
   .hoursContent {
-    padding: 20px 30px;
+    padding: 20px;
   }
   .hoursTitle {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -35,6 +47,6 @@
   }
 
   .hours ul li {
-    padding-bottom: 3px;
+    padding-bottom: 5px;
   }
 }

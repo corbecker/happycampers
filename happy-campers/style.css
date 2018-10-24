@@ -541,6 +541,16 @@ a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
 
+body {
+  color: rgba(0, 0, 0, 0.7); }
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background: #999;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 .features {
   display: flex;
   flex-flow: row wrap;
@@ -777,8 +787,16 @@ footer {
   background: #d3d3d3;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   border-radius: 3px; }
+  .hoursBox .address {
+    display: flex; }
+    .hoursBox .address ul:first-of-type {
+      width: 30px; }
+    .hoursBox .address li {
+      height: 30px; }
+  .hoursBox ul {
+    list-style: none; }
   .hoursBox .hoursContent {
-    padding: 20px 30px; }
+    padding: 20px; }
   .hoursBox .hoursTitle {
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     margin-bottom: 20px; }
@@ -794,4 +812,43 @@ footer {
   .hoursBox .hours ul:last-child {
     font-weight: 100; }
   .hoursBox .hours ul li {
-    padding-bottom: 3px; }
+    padding-bottom: 5px; }
+
+#gallery {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.thumbnail-wrapper {
+  background-color: #333;
+  min-width: 12rem;
+  min-height: 8rem;
+  position: relative;
+  flex: 1;
+  flex-basis: 8rem;
+  margin-right: 2px;
+  margin-bottom: 2px; }
+
+.thumbnail-wrapper:nth-child(5n) {
+  flex-basis: 14rem; }
+
+.thumbnail-wrapper:nth-child(2n + 1) {
+  flex-basis: 10rem; }
+
+.thumbnail-wrapper:nth-child(7n + 4) {
+  flex-basis: 20rem;
+  min-height: 12rem; }
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.thumbnail:hover {
+  opacity: 0.9;
+  transition: 0.2s ease-in; }

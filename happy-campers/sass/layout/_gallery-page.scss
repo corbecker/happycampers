@@ -1,0 +1,45 @@
+#gallery {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.thumbnail-wrapper {
+  background-color: #333;
+  min-width: 12rem;
+  min-height: 8rem;
+  position: relative;
+  flex: 1;
+  flex-basis: 8rem;
+  margin-right: 2px;
+  margin-bottom: 2px;
+}
+
+.thumbnail-wrapper:nth-child(5n) {
+  flex-basis: 14rem;
+}
+
+.thumbnail-wrapper:nth-child(2n + 1) {
+  flex-basis: 10rem;
+}
+
+.thumbnail-wrapper:nth-child(7n + 4) {
+  flex-basis: 20rem;
+  min-height: 12rem;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.thumbnail:hover {
+  opacity: 0.9;
+  transition: 0.2s ease-in;
+}

@@ -5,9 +5,23 @@ function hours_shortcode()
 
     return '<div class="hoursBox">
               <div class="hoursContent">
-                <div class="hoursTitle">
-                  <h2>Opening Hours</h2>
-                </div>
+              <div class="address">
+                <ul>
+                    <li>
+                      <i class="fa fa-map-pin"></i>
+                    </li>
+                    <li></li>
+                    <li>
+                      <i class="fa fa-phone"></i>
+                    </li>
+                </ul>
+                <ul>
+                  <li>Happy Campers</li>
+                  <li>Staplestown Carlow</li>
+                  <li><a href="tel:0875362781">0875362781</a></li>
+                </ul>
+              </div>
+                <hr>
                 <div class="hours">
                   <ul>
                     <li>Monday</li>
