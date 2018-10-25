@@ -14,7 +14,7 @@
     bottom: 0;
     left: 0;
     background-image: linear-gradient(to bottom right, #000, transparent);
-    opacity: 0.6;
+    opacity: 0.2;
   }
   h1 {
     position: absolute;
@@ -26,6 +26,15 @@
     letter-spacing: 3px;
     padding-left: 20px;
   }
+}
+.contact {
+  background: url("images/backgrounds/masthead2.jpg") top left repeat;
+}
+.about {
+  background: url("images/backgrounds/masthead3.jpg") top left repeat;
+}
+.services {
+  background: url("images/backgrounds/masthead4.jpg") top left repeat;
 }
 .sub-navigation {
   display: flex;

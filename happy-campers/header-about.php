@@ -1,4 +1,4 @@
-<div class="masthead">
+<div class="masthead about">
     <div class="container">
         <h1>About</h1>
     </div>

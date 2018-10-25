@@ -62,19 +62,24 @@
   }
 }
 
+.mobile-bg {
+  display: none;
+  height: 550px;
+  background-position: top center;
+  background-size: auto 550px;
+  width: 100%;
+  position: absolute;
+  background-image: url("images/parallax_opt/mobile_background.jpg");
+}
+
 @media only screen and (max-width: 654px) {
-  .keyart,
-  .keyart_layer {
-    /* height: 400px;*/
+  .mobile-bg {
+    display: block;
   }
-  .keyart_layer.parallax {
-    position: absolute;
+  .keyart_layer {
+    display: none;
   }
   #logo {
     top: 120px;
   }
-  #parallax {
-    /* top: 100px;*/
-  }
 }
-

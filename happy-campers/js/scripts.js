@@ -8,5 +8,7 @@
 
     nav.classList.toggle("show");
   }
-  document.querySelector(".toggle").addEventListener("click", classToggle);
+  if (document.querySelector(".toggle")) {
+    document.querySelector(".toggle").addEventListener("click", classToggle);
+  }
 })();

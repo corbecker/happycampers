@@ -1,0 +1,5 @@
+<div class="masthead contact">
+    <div class="container">
+        <h1>Contact Us</h1>
+    </div>
+</div>

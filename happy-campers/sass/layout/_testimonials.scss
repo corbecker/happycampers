@@ -1,0 +1,56 @@
+.testimonials-container {
+  .testimonials {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    blockquote {
+      margin: 10px 10px 0;
+      background: #fff;
+      padding: 40px;
+      position: relative;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.25em;
+      max-width: 400px;
+      .stars {
+        color: $casablanca;
+        margin-bottom: 10px;
+      }
+    }
+    blockquote:before,
+    blockquote:after {
+      content: "\201C";
+      position: absolute;
+      font-size: 80px;
+      padding: 10px;
+      line-height: 1;
+    }
+    blockquote:before {
+      top: 0;
+      left: 10px;
+    }
+    blockquote:after {
+      content: "\201D";
+      right: 20px;
+      bottom: 0;
+    }
+  }
+  .author {
+    margin-top: 10px;
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-family: questrian;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.testimonials-page {
+  .testimonials {
+    blockquote {
+      max-width: 800px;
+    }
+  }
+}
