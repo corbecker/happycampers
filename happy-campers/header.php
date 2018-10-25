@@ -15,18 +15,18 @@
                     <a href=<?php echo get_home_url()?>><?php echo get_bloginfo('name'); ?></a>
                 </li>
             </ul>
-            <div class="icons">
-                <a href="https://www.facebook.com/ashtreepethotel/"><i class="fa fa-facebook-square icon" style="font-size:30px;"></i></a>
-                <a href="https://www.instagram.com/aleidas_pet_hotel/"><i class="fa fa-instagram icon" style="font-size:30px;"></i></a>
-            </div>
-            <?php
-            wp_nav_menu(
-                array(
-                'theme_location' => 'menu-1',
-                'menu_id'        => 'primary-menu',
-                'container'      => 'false'
-                )
-            );
-            ?>
+            <ul>
+                <li class="icon"><a href="https://www.facebook.com/ashtreepethotel/"><i class="fa fa-facebook-square icon" style="font-size:30px;"></i></a></li>
+                <li class="icon"><a href="https://www.instagram.com/aleidas_pet_hotel/"><i class="fa fa-instagram icon" style="font-size:30px;"></i></a></li>
+                <?php
+                wp_nav_menu(
+                    array(
+                    'theme_location' => 'menu-1',
+                    'menu_id'        => 'primary-menu',
+                    'container'      => 'false'
+                    )
+                );
+                ?>
+            </ul>
         </nav>
     </header>

@@ -29,7 +29,8 @@
 
 	li {
 		padding: 10px;
-		margin: 5px;
+		display: flex;
+		align-items: center;
 		text-align: center;
 		text-transform: uppercase;
 		cursor: pointer;
@@ -74,19 +75,26 @@
 			background-color: rgba(255, 255, 255, 0);
 		}
 	}
-	.icons {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		width: 100px;
+}
+
+/*small phones*/
+@media only screen and (max-width: 360px) {
+	.main-navigation {
+		.icon {
+			display: none;
+		}
 	}
 }
 
+/*ipad most phones*/
 @media only screen and (max-width: 720px) {
 	.main-navigation {
 		justify-content: space-around;
 		ul {
 			margin-right: 0px;
+		}
+		.home-button {
+			margin: 0 auto;
 		}
 	}
 }
