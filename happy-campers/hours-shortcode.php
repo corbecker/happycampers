@@ -1,9 +1,12 @@
 <?php
 
-function hours_shortcode()
+function hours_shortcode($atts)
 {
+    $a = shortcode_atts(array(
+      'class' => '',
+    ), $atts);
 
-    return '<div class="hoursBox">
+    return '<div class="hoursBox ' . $a["class"] . '">
               <div class="hoursContent">
               <div class="address">
                 <ul>

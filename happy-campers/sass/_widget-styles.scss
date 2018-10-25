@@ -49,4 +49,17 @@
   .hours ul li {
     padding-bottom: 5px;
   }
+  &.footer {
+    background: transparent;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0);
+    a {
+      text-decoration: underline;
+    }
+    i {
+      color: $casablanca;
+    }
+    .hoursContent {
+      padding: 0px;
+    }
+  }
 }

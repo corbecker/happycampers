@@ -672,10 +672,10 @@ footer {
         footer .footer-container .footer-widget ul li {
           line-height: 1.5; }
       footer .footer-container .footer-widget li:before {
-        font-family: "FontAwesome";
-        content: "\f1b0";
-        margin: 0 5px 0 -15px;
-        color: #f6c745; }
+        /* font-family: "FontAwesome";*/
+        /* content: "\f1b0";*/
+        /* margin: 0 5px 0 -15px;*/
+        /* color: $casablanca;*/ }
       footer .footer-container .footer-widget a {
         color: rgba(255, 255, 255, 0.8); }
 
@@ -830,6 +830,15 @@ footer {
     font-weight: 100; }
   .hoursBox .hours ul li {
     padding-bottom: 5px; }
+  .hoursBox.footer {
+    background: transparent;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0); }
+    .hoursBox.footer a {
+      text-decoration: underline; }
+    .hoursBox.footer i {
+      color: #f6c745; }
+    .hoursBox.footer .hoursContent {
+      padding: 0px; }
 
 .gallery {
   display: -ms-grid;
