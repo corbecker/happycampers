@@ -1,48 +1,113 @@
 .gallery {
-  display: -ms-flexbox;
-  -ms-flex-wrap: wrap;
-  flex-flow: row wrap;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: (minmax(280px, 1fr)) [auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-auto-rows: 212px;
+  grid-auto-flow: row dense;
 }
 .gallery .gallery-item {
-  flex: auto;
-  width: 400px;
-  margin: 10px;
-  height: 300px;
-  -o-object-fit: cover;
-  object-fit: cover;
   overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .portrait {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
 }
-.gallery-columns-2 .gallery-item {
-  width: 50%;
+
+.gallery .gallery-item .gallery-icon {
+  cursor: pointer;
 }
-.gallery-columns-4 .gallery-item {
-  width: 25%;
-}
-.gallery .gallery-item img {
-  width: 100%;
-  height: auto;
-}
-.gallery img:hover {
-  background: white;
-}
-.gallery-columns-2 .attachment-medium {
-  max-width: 92%;
-  height: auto;
-}
-.gallery-columns-4 .attachment-thumbnail {
-  max-width: 84%;
-  height: auto;
-}
-.gallery .gallery-caption {
-  color: #888;
-  font-size: 12px;
-  margin: 0 0 12px;
-}
-.gallery dl,
-.gallery dt {
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
   margin: 0;
+  padding: 0;
+  background-color: inherit;
+  color: inherit;
+  font-size: inherit;
+  border: none;
 }
-.gallery br + br {
+.lightbox-container {
+  position: fixed;
   display: none;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  &.active {
+    display: block;
+  }
+  .lightbox-controls {
+    .close-button {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      display: block;
+      cursor: pointer;
+    }
+    .close-button:before,
+    .close-button:after {
+      content: "";
+      width: 55%;
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      top: 48%;
+      left: 22%;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+    .close-button:after {
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    .next {
+      cursor: pointer;
+      height: 40px;
+      margin-top: -10px;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      width: 40px;
+    }
+
+    .left {
+      border-bottom: 2px solid white;
+      border-left: 2px solid white;
+      left: 20px;
+    }
+
+    .right {
+      border-right: 2px solid white;
+      border-top: 2px solid white;
+      right: 20px;
+    }
+  }
+  .lightbox {
+    img {
+      position: absolute;
+      max-width: 70%;
+      max-height: 70%;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
 }

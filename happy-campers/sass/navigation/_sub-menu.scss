@@ -1,6 +1,7 @@
 .masthead {
   position: relative;
-  background: url("images/backgrounds/masthead.jpg") top left repeat;
+  background: url("images/backgrounds/masthead.jpg");
+  background-position: top center;
   height: 200px;
   margin-top: 50px;
   .container {
@@ -14,7 +15,7 @@
     bottom: 0;
     left: 0;
     background-image: linear-gradient(to bottom right, #000, transparent);
-    opacity: 0.2;
+    opacity: 0.3;
   }
   h1 {
     position: absolute;
@@ -28,13 +29,16 @@
   }
 }
 .contact {
-  background: url("images/backgrounds/masthead2.jpg") top left repeat;
+  background: url("images/backgrounds/masthead2.jpg");
+  background-position: top center;
 }
 .about {
-  background: url("images/backgrounds/masthead3.jpg") top left repeat;
+  background: url("images/backgrounds/masthead3.jpg");
+  background-position: top center;
 }
 .services {
-  background: url("images/backgrounds/masthead4.jpg") top left repeat;
+  background: url("images/backgrounds/masthead4.jpg");
+  background-position: top center;
 }
 .sub-navigation {
   display: flex;
@@ -88,7 +92,7 @@
 
 @media only screen and (max-width: 654px) {
   .masthead {
-    margin-top: 100px;
+    margin-top: 90px;
   }
 }
 

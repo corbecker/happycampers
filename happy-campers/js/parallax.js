@@ -2,7 +2,6 @@
     function castParallax() {
         var layers = document.getElementsByClassName("parallax");
         window.addEventListener("scroll", function(event) {
-            console.log("screollin");
             var top = this.pageYOffset;
             var layer, speed, yPos;
             for (var i = 0; i < layers.length; i++) {

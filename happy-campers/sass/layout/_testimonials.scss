@@ -1,17 +1,15 @@
 .testimonials-container {
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
   .testimonials {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-items: center;
+    padding-top: 30px;
     blockquote {
-      margin: 10px 10px 0;
-      background: #fff;
-      padding: 40px;
+      padding: 20px;
       position: relative;
       border: none;
-      border-radius: 8px;
-      font-size: 1.25em;
       max-width: 400px;
       .stars {
         color: $casablanca;
@@ -27,13 +25,13 @@
       line-height: 1;
     }
     blockquote:before {
-      top: 0;
-      left: 10px;
+      top: -20px;
+      left: -20px;
     }
     blockquote:after {
       content: "\201D";
-      right: 20px;
-      bottom: 0;
+      right: -20px;
+      bottom: -20px;
     }
   }
   .author {
@@ -48,6 +46,8 @@
   }
 }
 .testimonials-page {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
   .testimonials {
     blockquote {
       max-width: 800px;

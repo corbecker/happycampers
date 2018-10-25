@@ -53,9 +53,8 @@ get_header();
         </a>
     </section>
     <section class="testimonials-container container">
-
         <h2>Testimonials</h2>
-        <div class="card testimonials bubble">
+        <div class="card testimonials">
               <blockquote>
                   <div class="stars">
                       ★★★★★
