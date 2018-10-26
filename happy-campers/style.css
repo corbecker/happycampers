@@ -574,6 +574,31 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px; }
 
+form input:not([type="submit"]):not([type="file"]) {
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0;
+  font-size: 2.4rem;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 280px;
+  padding: 5px; }
+form input[type="submit"] {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  transition: all 0.2s; }
+  form input[type="submit"]:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    border-color: #f6c745;
+    color: #f6c745; }
+
 .features {
   display: flex;
   flex-flow: row wrap;
@@ -659,6 +684,7 @@ footer {
     flex-flow: row wrap;
     justify-content: space-around; }
     footer .footer-container .footer-widget {
+      text-align: center;
       color: rgba(255, 255, 255, 0.8);
       margin: 20px;
       min-width: 250px; }
@@ -678,6 +704,8 @@ footer {
         /* color: $casablanca;*/ }
       footer .footer-container .footer-widget a {
         color: rgba(255, 255, 255, 0.8); }
+    footer .footer-container #footer-sidebar2 {
+      text-align: left; }
 
 /*reusable elements (buttons etc)*/
 .btn {
@@ -832,7 +860,8 @@ footer {
     padding-bottom: 5px; }
   .hoursBox.footer {
     background: transparent;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0); }
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0);
+    text-align: left; }
     .hoursBox.footer a {
       text-decoration: underline; }
     .hoursBox.footer i {

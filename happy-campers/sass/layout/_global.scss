@@ -30,3 +30,33 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+form {
+  input:not([type="submit"]):not([type="file"]) {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    border: 0;
+    font-size: 2.4rem;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 280px;
+    padding: 5px;
+  }
+  input[type="submit"] {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    transition: all 0.2s;
+    &:hover {
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px);
+      border-color: $casablanca;
+      color: $casablanca;
+    }
+  }
+}

@@ -114,6 +114,23 @@ add_filter('use_default_gallery_style', '__return_false');
         prevImage();
     });
 
+    window.addEventListener("keydown", function(e){
+        console.log(e.keyCode);
+        if(lbc.classList.contains("active")){   
+            switch(e.keyCode) {
+                 case 37: 
+                    prevImage();
+                    break;
+                 case 39: 
+                    nextImage();
+                    break;
+                case 27:
+                    closeSlideShow();
+                    break;
+            }
+        }
+    });
+
 
 </script>
 <?php

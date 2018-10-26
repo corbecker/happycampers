@@ -21,6 +21,7 @@ footer {
     justify-content: space-around;
 
     .footer-widget {
+      text-align: center;
       h3 {
         color: $casablanca;
         font-family: questrian;
@@ -45,6 +46,9 @@ footer {
       a {
         color: rgba(255, 255, 255, 0.8);
       }
+    }
+    #footer-sidebar2 {
+      text-align: left;
     }
   }
 }
