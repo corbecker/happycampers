@@ -37,6 +37,7 @@ get_header();
             <div class="feature">
                 <h1>Dog Boarding</h1>
                 <img src="<?php bloginfo('template_directory'); ?>/images/boarding_2.jpg" alt="dog_boarding"/>
+                
             </div>
         </a>
         <a href='https://happycamperspetcamp.ie/services/dog-daycare/'>
