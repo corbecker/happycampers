@@ -37,19 +37,21 @@ get_header();
             <div class="feature">
                 <h1>Dog Boarding</h1>
                 <img src="<?php bloginfo('template_directory'); ?>/images/boarding_2.jpg" alt="dog_boarding"/>
-                
+                <p>Enjoy peace of mind while you're away. Relax knowing your dog is having as much fun as you are, camping overnight in our brand new themed indoor boarding facility. <a class="link">Learn more ></a></p> 
             </div>
         </a>
         <a href='https://happycamperspetcamp.ie/services/dog-daycare/'>
             <div class="feature">
                 <h1>Dog Daycare</h1>
                 <img src="<?php bloginfo('template_directory'); ?>/images/daycare_2.jpg" alt="dog_daycare"/>
+                <p>Dog Daycare is a fun day out for your pal while you're at work or heading out for the day. It is also hugely beneficial for dog behaviour and human/dog socialisation. <a class="link">Learn more ></a></p> 
             </div>
         </a>
         <a href='https://happycamperspetcamp.ie/services/dog-grooming/'>
             <div class="feature">
                 <h1>Grooming</h1>
                 <img src="<?php bloginfo('template_directory'); ?>/images/grooming.jpg" alt="dog_grooming"/>
+                <p>Treat your pup to a spa day! Our in-house Dog Grooming facility offers bathing, trimming, and styling. Get summer ready with a trim  or freshen up with a wash after daycare. <a class="link">Learn more ></a></p> 
             </div>
         </a>
     </section>

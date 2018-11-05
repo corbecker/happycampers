@@ -637,6 +637,12 @@ form input[type="submit"] {
       font-family: questrian;
       letter-spacing: 2px;
       font-size: 3rem; }
+  .features p {
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .features .link {
+    text-decoration: underline; }
 
 a {
   text-decoration: none; }
@@ -859,7 +865,8 @@ footer {
   .hoursBox.footer {
     background: transparent;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0);
-    text-align: left; }
+    text-align: left;
+    border: 0px; }
     .hoursBox.footer a {
       text-decoration: underline; }
     .hoursBox.footer i {
@@ -867,6 +874,9 @@ footer {
     .hoursBox.footer .hoursContent {
       padding: 0px; }
 
+@media only screen and (max-width: 1000px) {
+  .hoursBox {
+    border: 0px; } }
 .gallery {
   display: -ms-grid;
   display: grid;

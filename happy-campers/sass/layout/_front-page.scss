@@ -42,6 +42,14 @@
       font-size: 3rem;
     }
   }
+  p {
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .link {
+    text-decoration: underline;
+  }
 }
 a {
   text-decoration: none;

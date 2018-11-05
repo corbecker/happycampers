@@ -51,6 +51,7 @@
     background: transparent;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0);
     text-align: left;
+    border: 0px;
     a {
       text-decoration: underline;
     }
@@ -60,5 +61,11 @@
     .hoursContent {
       padding: 0px;
     }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hoursBox {
+    border: 0px;
   }
 }
