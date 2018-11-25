@@ -7,6 +7,7 @@ function happy_campers_setup()
         'menu-1' => esc_html__('Primary', 'happy-campers'),
         'menu-2' => esc_html__('Services', 'happy-campers'),
         'menu-3' => esc_html__('About', 'happy-campers'),
+        'menu-4' => esc_html__('Global', 'happy-campers'),
         )
     );
 }

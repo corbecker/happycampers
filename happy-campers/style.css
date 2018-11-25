@@ -456,6 +456,79 @@ a {
     .main-navigation .home-button li:hover {
       background-color: rgba(255, 255, 255, 0); }
 
+.mob-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: none;
+  background-color: white;
+  align-items: flex-start; }
+  .mob-nav nav {
+    width: 100%;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    display: flex;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px; }
+    .mob-nav nav ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      list-style-type: none;
+      font-size: 3rem; }
+      .mob-nav nav ul li {
+        line-height: 1.8;
+        border-bottom: 2px solid #0a4d1e;
+        cursor: pointer; }
+        .mob-nav nav ul li a {
+          color: #0a4d1e; }
+        .mob-nav nav ul li ul {
+          display: none; }
+  .mob-nav .contact-list {
+    margin-top: auto;
+    margin-bottom: 20px;
+    font-size: 2rem; }
+    .mob-nav .contact-list ul {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; }
+    .mob-nav .contact-list li {
+      display: flex;
+      justify-content: center;
+      border: none;
+      text-align: center; }
+    .mob-nav .contact-list .btn {
+      color: white;
+      background-color: #0a4d1e;
+      padding: 15px; }
+      .mob-nav .contact-list .btn i {
+        padding-right: 10px;
+        color: #f6c745; }
+    .mob-nav .contact-list .btn-clear {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+      border: 1px solid #0a4d1e;
+      margin-bottom: 10px;
+      color: #0a4d1e;
+      padding: 15px; }
+      .mob-nav .contact-list .btn-clear span {
+        margin-left: 10px; }
+      .mob-nav .contact-list .btn-clear:hover {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        border-color: #0a4d1e;
+        color: #0a4d1e; }
+
+.show {
+  display: flex; }
+
 .mobile-nav {
   display: flex;
   display: none;
@@ -472,7 +545,8 @@ a {
   .mobile-nav li {
     margin: 10px; }
   .mobile-nav .toggle-nav {
-    margin-right: auto; }
+    margin-right: auto;
+    cursor: pointer; }
   .mobile-nav .btn {
     background-color: #0a4d1e;
     margin: 10px;
@@ -687,7 +761,8 @@ form input[type="submit"] {
   flex-flow: row wrap;
   justify-content: space-around;
   -webkit-transform: translateY(-50px);
-  transform: translateY(-50px); }
+  transform: translateY(-50px);
+  align-items: center; }
   .features .feature {
     background: white;
     text-align: center;
@@ -707,6 +782,8 @@ form input[type="submit"] {
       -webkit-transform: scale(1.02);
       transform: scale(1.02);
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
+    .features .feature a {
+      display: inline-block; }
     .features .feature img {
       max-width: 100%;
       transition: -webkit-transform 0.3s ease-out;
@@ -725,8 +802,11 @@ form input[type="submit"] {
     font-weight: 300;
     padding-top: 20px;
     padding-bottom: 20px; }
-  .features .link {
-    text-decoration: underline; }
+  .features .btn-clear {
+    font-size: 1.8rem;
+    border-color: #0a4d1e;
+    color: #0a4d1e;
+    font-weight: 600; }
 
 a {
   text-decoration: none; }
@@ -740,7 +820,7 @@ a {
   flex-flow: row wrap;
   background-color: #001a08;
   color: rgba(255, 255, 255, 0.7);
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   /*small phones*/
   /*most phones*/
   /*ipad*/ }
@@ -872,6 +952,34 @@ footer {
   .btn:hover {
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px); }
+
+.close-btn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 3.25em;
+  height: 3.25em;
+  cursor: pointer; }
+
+.close-btn:after,
+.close-btn:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  top: 50%;
+  left: 50%; }
+
+.close-btn:before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 2.25em; }
+
+.close-btn:after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 2.25em; }
 
 .card {
   background: white;

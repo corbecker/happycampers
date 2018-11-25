@@ -20,7 +20,7 @@ get_header();
             <a href="https://happycamperspetcamp.ie/about/take-a-tour/">
                 <button class="btn">Take a Tour</button>
             </a>
-            <a href="https://happycamperspetcamp.ie/contact/">
+            <a href="<?php echo get_site_url();?>/reservations/">
                 <button class="btn">Reservations</button>
             </a>
         </div>
@@ -74,27 +74,30 @@ get_header();
 </div>
 <div class="main">
     <section class="features container">
-        <a href='https://happycamperspetcamp.ie/services/dog-boarding/'>
             <div class="feature">
                 <h2>Dog Boarding</h2>
                 <img src="<?php bloginfo('template_directory'); ?>/images/boarding_2.jpg" alt="dog_boarding"/>
-                <p>Enjoy peace of mind while you're away. Relax knowing your dog is having as much fun as you are, camping overnight in our brand new themed indoor boarding facility. <a class="link">Learn more ></a></p> 
+                <p>Enjoy peace of mind while you're away. Relax knowing your dog is having as much fun as you are, camping overnight in our brand new themed indoor boarding facility.</p> 
+                <a href='https://happycamperspetcamp.ie/services/dog-boarding/'>
+                  <button class="btn-clear">Learn more  <i class="fa fa-arrow-right"></i></button>
+                </a>
             </div>
-        </a>
-        <a href='https://happycamperspetcamp.ie/services/dog-daycare/'>
             <div class="feature">
                 <h2>Dog Daycare</h2>
                 <img src="<?php bloginfo('template_directory'); ?>/images/daycare_2.jpg" alt="dog_daycare"/>
-                <p>Dog Daycare is a fun day out for your pal while you're at work or heading out for the day. It is also hugely beneficial for dog behaviour and human/dog socialisation. <a class="link">Learn more ></a></p> 
+                <p>Dog Daycare is a fun day out for your pal while you're at work or heading out for the day. It is also hugely beneficial for dog behaviour and human/dog socialisation.</p> 
+                <a href='https://happycamperspetcamp.ie/services/dog-daycare/'>
+                  <button class="btn-clear">Learn more  <i class="fa fa-arrow-right"></i></button>
+                </a>
             </div>
-        </a>
-        <a href='https://happycamperspetcamp.ie/services/dog-grooming/'>
             <div class="feature">
                 <h2>Dog Grooming</h2>
                 <img src="<?php bloginfo('template_directory'); ?>/images/grooming.jpg" alt="dog_grooming"/>
-                <p>Treat your pup to a spa day! Our in-house Dog Grooming facility offers bathing, trimming, and styling. Get summer ready with a trim  or freshen up with a wash after daycare. <a class="link">Learn more ></a></p> 
+                <p>Treat your pup to a spa day! Our in-house Dog Grooming facility offers bathing, trimming, and styling. Get summer ready with a trim  or freshen up with a wash after daycare.</p> 
+                <a href='https://happycamperspetcamp.ie/services/dog-grooming/'>
+                  <button class="btn-clear">Learn more  <i class="fa fa-arrow-right"></i></button>
+                </a>
             </div>
-        </a>
     </section>
     <section class="testimonials-container container">
         <h2>Testimonials</h2>

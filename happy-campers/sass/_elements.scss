@@ -11,6 +11,38 @@
   }
 }
 
+.close-btn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 3.25em;
+  height: 3.25em;
+  cursor: pointer;
+}
+
+.close-btn:after,
+.close-btn:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  top: 50%;
+  left: 50%;
+}
+
+.close-btn:before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 2.25em;
+}
+
+.close-btn:after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 2.25em;
+}
+
 .card {
   background: white;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);

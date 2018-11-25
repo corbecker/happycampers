@@ -4,6 +4,7 @@
   justify-content: space-around;
   -webkit-transform: translateY(-50px);
   transform: translateY(-50px);
+  align-items: center;
 
   .feature {
     background: white;
@@ -24,6 +25,9 @@
       -webkit-transform: scale(1.02);
       transform: scale(1.02);
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+    a {
+      display: inline-block;
     }
 
     img {
@@ -49,8 +53,11 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .link {
-    text-decoration: underline;
+  .btn-clear {
+    font-size: 1.8rem;
+    border-color: $dark-fern;
+    color: $dark-fern;
+    font-weight: 600;
   }
 }
 a {
@@ -66,7 +73,7 @@ a {
   flex-flow: row wrap;
   background-color: #001a08;
   color: rgba(255, 255, 255, 0.7);
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   h3 {
     font-family: questrian;
     color: $casablanca;

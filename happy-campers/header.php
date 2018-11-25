@@ -42,5 +42,25 @@
             <button class="btn-clear">
                 <a href="tel:(00353)852432902"><i class="fa fa-phone" style="font-size:20px;"></i><span>Call Us</span></a>
             </button>
+            
         </nav>
+        <div class="mob-nav">
+            <nav>
+                <span class="close-btn"></span>
+                <?php
+                wp_nav_menu(
+                    array(
+                    'theme_location' => 'menu-4',
+                    'menu_id'        => 'global-menu',
+                    'container'      => 'false'
+                    )
+                );
+                ?>
+                <ul class="contact-list">
+                    <li><a href="tel:(00353)852432902"><button class="btn-clear"><i class="fa fa-phone"></i><span>+353 85 2342902</span></button></a></li>
+                    <li><a href="https://goo.gl/maps/8UiK4yK71QE2" target="_blank"><button class="btn"><i class="fa fa-map-pin"></i>Get Directions</button></a></li>
+                <ul>
+            </nav>
+            
+        </div>
     </header>
