@@ -17,7 +17,6 @@
 		list-style: none;
 		text-decoration: none;
 		margin: 0;
-		margin-right: 40px;
 		padding: 0;
 		& > .current-menu-item,
 		.current-page-ancestor {
@@ -40,13 +39,29 @@
 		}
 
 		a {
-			color: white;
+			color: rgb(255, 255, 255);
 			text-decoration: none;
 		}
 	}
 	li:hover {
 		a {
 			color: $casablanca;
+		}
+	}
+	.phone {
+		margin-right: 40px;
+		a {
+			display: flex;
+			align-items: center;
+			font-weight: 400;
+			font-size: 2rem;
+			color: rgba(255, 255, 255, 0.8);
+			span {
+				font-family: "Lato", sans-serif;
+				margin-left: 10px;
+				line-height: 1.8rem;
+				vertical-align: middle;
+			}
 		}
 	}
 
@@ -69,7 +84,13 @@
 		transform: scale(1.2);
 		padding: 0 20px 0 20px;
 		a {
+			font-size: 2.2rem;
 			color: $casablanca;
+			line-height: 0.9;
+			span {
+				color: white;
+				font-size: 1.5rem;
+			}
 		}
 		li:hover {
 			background-color: rgba(255, 255, 255, 0);
@@ -77,10 +98,71 @@
 	}
 }
 
+.mobile-nav {
+	display: flex;
+	display: none;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	z-index: 2;
+	bottom: 0px;
+	justify-content: flex-end;
+	align-items: center;
+	ul {
+		list-style-type: none;
+	}
+	li {
+		margin: 10px;
+	}
+	.toggle-nav {
+		margin-right: auto;
+	}
+	.btn {
+		background-color: $dark-fern;
+		margin: 10px;
+		color: rgba(255, 255, 255, 0.8);
+		padding: 10px;
+		&:hover {
+			-webkit-transform: translateY(-0px);
+			transform: translateY(-0px);
+			border-color: $dark-fern;
+			color: white;
+		}
+	}
+	.btn-clear {
+		background-color: rgba(255, 255, 255, 0.2);
+		padding: 10px;
+		color: rgba(255, 255, 255, 0.8);
+		cursor: pointer;
+		border-radius: 2px;
+		border: 1px solid $dark-fern;
+		transition: all 0.2s;
+		margin: 10px;
+		color: $dark-fern;
+		a {
+			display: flex;
+			align-items: center;
+			span {
+				margin-left: 10px;
+			}
+		}
+		&:hover {
+			-webkit-transform: translateY(-0px);
+			transform: translateY(-0px);
+			border-color: $dark-fern;
+			color: $dark-fern;
+		}
+	}
+}
+
 /*small phones*/
 @media only screen and (max-width: 360px) {
+	.mobile-nav {
+		display: flex;
+	}
 	.main-navigation {
-		.icon {
+		.menu {
 			display: none;
 		}
 	}
@@ -88,13 +170,30 @@
 
 /*ipad most phones*/
 @media only screen and (max-width: 720px) {
+	.mobile-nav {
+		display: flex;
+	}
 	.main-navigation {
-		justify-content: space-around;
-		ul {
-			margin-right: 0px;
+		.menu {
+			display: none;
+		}
+		.phone {
+			display: none;
 		}
 		.home-button {
 			margin: 0 auto;
+		}
+	}
+}
+
+/*ipad*/
+@media only screen and (max-width: 1000px) {
+	.mobile-nav {
+		display: flex;
+	}
+	.main-navigation {
+		ul:nth-of-type(2) {
+			display: none;
 		}
 	}
 }

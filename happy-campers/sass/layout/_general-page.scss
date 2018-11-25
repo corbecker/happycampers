@@ -20,10 +20,6 @@
   }
 }
 
-.main {
-  padding-top: 40px;
-}
-
 @media only screen and (max-width: 1000px) {
   .main-sidebar {
     grid-template-areas:
@@ -34,9 +30,6 @@
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
     grid-gap: 10px;
-  }
-  .main {
-    padding-top: 0;
   }
   .tabs .tab,
   .tabs label {

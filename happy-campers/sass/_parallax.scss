@@ -63,15 +63,19 @@
 
 .mobile-bg {
   display: none;
-  height: 550px;
+  height: 400px;
   background-position: top center;
-  background-size: auto 550px;
+  background-size: auto 400px;
   width: 100%;
   position: absolute;
   background-image: url("images/parallax_opt/mobile_background.jpg");
 }
 
 @media only screen and (max-width: 654px) {
+  .keyart {
+    position: relative;
+    height: 400px;
+  }
   .mobile-bg {
     display: block;
   }
@@ -79,6 +83,6 @@
     display: none;
   }
   #logo {
-    top: 120px;
+    top: 80px;
   }
 }

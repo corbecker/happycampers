@@ -15,41 +15,82 @@ get_header();
     <div class="" id="logo" data-speed="100"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"/></div>
 </div>
 <div class="cta-section">
-    <div class="cta-section">
-        <div class="cta">
-            <h3>New Camper?</h3>
+    <div class="cta-section container">
+        <div class="cta-area btn-area">
             <a href="https://happycamperspetcamp.ie/about/take-a-tour/">
-                <button class="btn-clear">Take a Tour</button>
+                <button class="btn">Take a Tour</button>
             </a>
-        </div>
-        <div class="divider"></div>
-        <div class="cta">
-            <h3>Existing Camper</h3>
             <a href="https://happycamperspetcamp.ie/contact/">
-                <button class="btn-clear">Make Reservation</button>
+                <button class="btn">Reservations</button>
             </a>
         </div>
+        <div class="cta-area location">
+            <div class="icon"><i class="fa fa-map-pin"></i></div>
+            <a href="https://goo.gl/maps/8UiK4yK71QE2" target="_blank">
+              <div>
+                <span>Happy Campers Pet Hotel</span>
+                <br>
+                <span>Church Rd Staplestown</span>
+                <br>
+                <span>Carlow, Ireland</span>
+                <br>
+                <span class="directions">Directions</span>
+              </div>
+            </a>
+        </div>
+        <div class="cta-area hours">
+            <table>
+              <colgroup>
+                <col id="mon">
+                <col id="tue">
+                <col id="wed">
+                <col id="thu">
+                <col id="fri">
+                <col id="sat">
+                <col id="sun">
+              </colgroup>
+              <tr>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+              </tr>
+
+              <tr class="opening">
+                <td>8am - 6pm</td>
+                <td>8am - 6pm</td>
+                <td>8am - 6pm</td>
+                <td>8am - 6pm</td>
+                <td>8am - 6pm</td>
+                <td>8am - 6pm</td>
+                <td>4pm - 5pm</td>
+              </tr>
+            </table>
+          </div>
     </div>
 </div>
 <div class="main">
     <section class="features container">
         <a href='https://happycamperspetcamp.ie/services/dog-boarding/'>
             <div class="feature">
-                <h1>Dog Boarding</h1>
+                <h2>Dog Boarding</h2>
                 <img src="<?php bloginfo('template_directory'); ?>/images/boarding_2.jpg" alt="dog_boarding"/>
                 <p>Enjoy peace of mind while you're away. Relax knowing your dog is having as much fun as you are, camping overnight in our brand new themed indoor boarding facility. <a class="link">Learn more ></a></p> 
             </div>
         </a>
         <a href='https://happycamperspetcamp.ie/services/dog-daycare/'>
             <div class="feature">
-                <h1>Dog Daycare</h1>
+                <h2>Dog Daycare</h2>
                 <img src="<?php bloginfo('template_directory'); ?>/images/daycare_2.jpg" alt="dog_daycare"/>
                 <p>Dog Daycare is a fun day out for your pal while you're at work or heading out for the day. It is also hugely beneficial for dog behaviour and human/dog socialisation. <a class="link">Learn more ></a></p> 
             </div>
         </a>
         <a href='https://happycamperspetcamp.ie/services/dog-grooming/'>
             <div class="feature">
-                <h1>Grooming</h1>
+                <h2>Dog Grooming</h2>
                 <img src="<?php bloginfo('template_directory'); ?>/images/grooming.jpg" alt="dog_grooming"/>
                 <p>Treat your pup to a spa day! Our in-house Dog Grooming facility offers bathing, trimming, and styling. Get summer ready with a trim  or freshen up with a wash after daycare. <a class="link">Learn more ></a></p> 
             </div>
