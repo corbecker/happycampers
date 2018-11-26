@@ -66,3 +66,17 @@
     color: $casablanca;
   }
 }
+
+.btn-huge {
+  display: block;
+  width: 100%;
+  background-color: rgba(246, 199, 69, 0.84);
+  padding: 10px;
+  cursor: pointer;
+  border: 0px;
+  transition: all 0.2s;
+  &:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+}

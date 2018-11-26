@@ -3,10 +3,10 @@
 get_header();
 get_header('services');
 ?>
-<div class="main">
+<div class="main main-general">
     <div class="main-sidebar container card">
         <div class="content">
-          <h2><?php single_post_title() ?></h2>
+          <div class="center"><h1><?php single_post_title() ?></h1></div>
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) :
                     the_post(); ?>

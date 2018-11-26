@@ -77,7 +77,7 @@ get_header();
             <div class="feature">
                 <h2>Dog Boarding</h2>
                 <img src="<?php bloginfo('template_directory'); ?>/images/boarding_2.jpg" alt="dog_boarding"/>
-                <p>Enjoy peace of mind while you're away. Relax knowing your dog is having as much fun as you are, camping overnight in our brand new themed indoor boarding facility.</p> 
+                <p>Our overnight boarding service provides a home from home for your furry friend. Unlike traditional dog kennels, most of our guests sleep together. It's like a doggy slumber party.</p>
                 <a href='https://happycamperspetcamp.ie/services/dog-boarding/'>
                   <button class="btn-clear">Learn more  <i class="fa fa-arrow-right"></i></button>
                 </a>
@@ -85,7 +85,7 @@ get_header();
             <div class="feature">
                 <h2>Dog Daycare</h2>
                 <img src="<?php bloginfo('template_directory'); ?>/images/daycare_2.jpg" alt="dog_daycare"/>
-                <p>Dog Daycare is a fun day out for your pal while you're at work or heading out for the day. It is also hugely beneficial for dog behaviour and human/dog socialisation.</p> 
+                <p>Doggy Daycare is the answer for pet parents that don't want their pup left at home alone. Our dog daycare service ensures your dog is gets the exercise, and socialization they need.</p>
                 <a href='https://happycamperspetcamp.ie/services/dog-daycare/'>
                   <button class="btn-clear">Learn more  <i class="fa fa-arrow-right"></i></button>
                 </a>
@@ -93,7 +93,7 @@ get_header();
             <div class="feature">
                 <h2>Dog Grooming</h2>
                 <img src="<?php bloginfo('template_directory'); ?>/images/grooming.jpg" alt="dog_grooming"/>
-                <p>Treat your pup to a spa day! Our in-house Dog Grooming facility offers bathing, trimming, and styling. Get summer ready with a trim  or freshen up with a wash after daycare.</p> 
+                <p>Treat your pup to a spa day! Our in-house dog grooming service offers bathing, trimming, and styling. Get summer ready with a trim  or freshen up with a wash during daycare.</p> 
                 <a href='https://happycamperspetcamp.ie/services/dog-grooming/'>
                   <button class="btn-clear">Learn more  <i class="fa fa-arrow-right"></i></button>
                 </a>

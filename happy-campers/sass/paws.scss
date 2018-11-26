@@ -1,0 +1,69 @@
+.ajax-loader {
+  -webkit-transform: rotate(90deg) translate(-50%, 0%);
+  transform: rotate(90deg) translate(-50%, 0%);
+  font-size: 30px;
+  width: 1em;
+  height: 3em;
+
+  .paw {
+    width: 1em;
+    height: 1em;
+    -webkit-animation: 2050ms pawAnimation ease-in-out infinite;
+    animation: 2050ms pawAnimation ease-in-out infinite;
+    opacity: 0;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .icon {
+      fill: #e1eef0;
+    }
+
+    &:nth-child(odd) {
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+
+    &:nth-child(even) {
+      -webkit-transform: rotate(10deg) translate(125%, 0);
+      transform: rotate(10deg) translate(125%, 0);
+    }
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        -webkit-animation-delay: #{(($i * -1)+6) * 0.25}s;
+        animation-delay: #{(($i * -1)+6) * 0.25}s;
+      }
+    }
+
+    .no-cssanimations & {
+      opacity: 1;
+    }
+  }
+}
+
+@-webkit-keyframes pawAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pawAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

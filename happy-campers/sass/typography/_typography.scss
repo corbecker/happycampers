@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
 html {
   font-size: 62.5%;
-  letter-spacing: 1.1rem;
 }
 body {
   font-family: "Lato", sans-serif;
-  letter-spacing: 0;
   font-weight: 400;
   font-style: normal;
   font-size: 1.8rem;
@@ -22,8 +20,9 @@ body {
 }
 
 h1 {
-  font-size: 4.8rem;
+  font-size: 4rem;
   font-family: questrian;
+  padding-bottom: 20px;
 }
 
 h2 {
@@ -40,12 +39,12 @@ h3 {
   font-family: questrian;
 }
 
-h4 {
-  font-size: 1.8rem;
-}
-
 p {
-  font-size: 1.6rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  text-align: justify;
+  line-height: 1.4;
+  padding-bottom: 10px;
 }
 
 caption {
@@ -56,9 +55,38 @@ a {
   color: rgba(0, 0, 0, 0.84);
 }
 
+/*most phones*/
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 2.8rem;
+    font-family: questrian;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: questrian;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: questrian;
+  }
+}
+
 .icon {
   color: rgba(255, 255, 255, 0.84);
   &:hover {
     color: $casablanca;
   }
+}
+
+.sub {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 }

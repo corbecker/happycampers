@@ -1,8 +1,4 @@
-<div class="masthead services">
-    <div class="container">
-        <h1>Services</h1>
-    </div>
-</div>
+<div class="masthead services"></div>
 <nav class="sub-navigation">
     <div>
         <ul class="toggle">

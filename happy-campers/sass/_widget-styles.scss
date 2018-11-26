@@ -1,28 +1,9 @@
-.icon-location:before {
-  font-family: "FontAwesome";
-  content: "\f041";
-}
-
 .hoursBox {
-  border-left: 1px solid #d3d3d3;
-  .address {
-    display: flex;
-    ul:first-of-type {
-      width: 30px;
-    }
-    li {
-      height: 30px;
-    }
-  }
   ul {
     list-style: none;
   }
   .hoursContent {
     padding: 20px;
-  }
-  .hoursTitle {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
   }
 
   .hours {

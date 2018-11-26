@@ -115,7 +115,7 @@
 		align-items: flex-start;
 		height: 100%;
 		display: flex;
-		padding-top: 100px;
+		padding-top: 80px;
 		padding-left: 50px;
 		padding-right: 50px;
 		ul {
@@ -123,7 +123,7 @@
 			flex-direction: column;
 			width: 100%;
 			list-style-type: none;
-			font-size: 3rem;
+			font-size: 2.2rem;
 			li {
 				line-height: 1.8;
 				border-bottom: 2px solid $dark-fern;
@@ -140,12 +140,12 @@
 	.contact-list {
 		margin-top: auto;
 		margin-bottom: 20px;
-		font-size: 2rem;
-		ul {
-			display: flex;
-			justify-content: center;
-			align-items: flex-start;
-		}
+		margin-top: 10px;
+		font-size: 1.8rem;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		flex-direction: row;
 		li {
 			display: flex;
 			justify-content: center;

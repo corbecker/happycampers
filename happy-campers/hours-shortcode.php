@@ -8,23 +8,6 @@ function hours_shortcode($atts)
 
     return '<div class="hoursBox ' . $a["class"] . '">
               <div class="hoursContent">
-              <div class="address">
-                <ul>
-                    <li>
-                      <i class="fa fa-map-pin"></i>
-                    </li>
-                    <li></li>
-                    <li>
-                      <i class="fa fa-phone"></i>
-                    </li>
-                </ul>
-                <ul>
-                  <li>Happy Campers</li>
-                  <li>Staplestown Carlow</li>
-                  <li><a href="tel:0875362781">0875362781</a></li>
-                </ul>
-              </div>
-                <hr>
                 <div class="hours">
                   <ul>
                     <li>Monday</li>
@@ -41,8 +24,8 @@ function hours_shortcode($atts)
                     <li>8am - 6pm</li>
                     <li>8am - 6pm</li>
                     <li>8am - 6pm</li>
-                    <li>8am - 4pm</li>
-                    <li>Closed</li>
+                    <li>8am - 6pm</li>
+                    <li>4pm - 5pm</li>
                   </ul>
                 </div>
             </div>
