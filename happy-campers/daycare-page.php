@@ -63,7 +63,7 @@ get_header('services');
                             <td>€15</td>
                         </tr>
                         <tr>
-                            <td>5 Days Package</td>
+                            <td>5 Days Package (1 day Free)</td>
                             <td>€60</td>
                         </tr>
                         <tr>
@@ -76,7 +76,7 @@ get_header('services');
                 <p>Before we enroll a new camper into daycare we provide a free trial day. This is an important step to ensure your dog is of a suitable temperament and will fit in well with the rest of the gang. The safety and happiness of all of our guests is our highest priority.</p>
                 <div class="center"><h2 class="paw-title" id="rates">Reservations</h2></div>
                 <div class="flex-child">
-                    <a href="<?php echo get_site_url();?>/about/take-a-tour/">
+                    <a href="<?php echo get_site_url();?>/make-a-reservation">
                         <button class="btn-huge">Make a Reservation</button>
                     </a>
                 </div>

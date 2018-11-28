@@ -18,11 +18,6 @@ get_header('services');
                             </a>
                         </div>
                     </div>
-                    <div class="flex-parent">
-                        <div class="flex-child-half"><img src="http://192.168.1.113:8888/happycampers/wp-content/uploads/2018/10/DSC08958.jpg" alt="pet hotel beach" /></div>
-                        <div class="flex-child-half"><img src="http://192.168.1.113:8888/happycampers/wp-content/uploads/2018/10/DSC08968.jpg" alt="pet boarding section" />
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="flex-parent">

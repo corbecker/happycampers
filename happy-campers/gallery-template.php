@@ -5,8 +5,10 @@ get_header('about');
 add_filter('use_default_gallery_style', '__return_false');
 ?>
 <div class="main">
-    <div class="container card">
-          <h2><?php single_post_title() ?></h2>
+    <div class="card">
+        <div class="container">
+          <div class="center"><h1 class="paw-title"><?php single_post_title() ?></h1></div>
+          <br>
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) :
                     the_post(); ?>
@@ -16,6 +18,17 @@ add_filter('use_default_gallery_style', '__return_false');
                 <?php endwhile; ?>
                 <?php wp_reset_query(); ?>
             <?php endif; ?>
+            <div class="flex-parent">
+                <div class="flex-child">
+                    <h2 class="paw-title">Like what you see?</h2>
+                    <a href="<?php echo get_site_url();?>/about/make-a-reservation/">
+                      <button class="btn-huge"> Make a Reservation</button>
+                    </a>
+                    <br>
+                </div>
+            </div>
+            
+            </div>
     </div>
 </div>
 <div class="lightbox-container">

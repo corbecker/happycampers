@@ -17,10 +17,10 @@ get_header();
 <div class="cta-section">
   <div class="cta-section container">
     <div class="cta-area btn-area">
-      <a href="https://happycamperspetcamp.ie/about/take-a-tour/">
+      <a href="<?php echo get_site_url();?>/take-a-tour/">
         <button class="btn">Take a Tour</button>
       </a>
-      <a href="<?php echo get_site_url();?>/reservations/">
+      <a href="<?php echo get_site_url();?>/make-a-reservation/">
         <button class="btn">Reservations</button>
       </a>
     </div>
@@ -79,7 +79,7 @@ get_header();
       <h2>Dog Boarding</h2>
       <img src="<?php bloginfo('template_directory'); ?>/images/boarding_2.jpg" alt="dog_boarding"/>
       <p>Our overnight boarding service provides a home from home for your furry friend. Unlike traditional dog kennels, most of our guests sleep together. It's like a doggy slumber party.</p>
-      <a href='https://happycamperspetcamp.ie/services/dog-boarding/'>
+      <a href='<?php echo get_site_url();?>/dog-boarding/'>
         <button class="btn-clear">Learn more  <i class="fa fa-arrow-right"></i></button>
       </a>
     </div>
@@ -87,7 +87,7 @@ get_header();
       <h2>Dog Daycare</h2>
       <img src="<?php bloginfo('template_directory'); ?>/images/daycare_2.jpg" alt="dog_daycare"/>
       <p>Doggy Daycare is the answer for pet parents that don't want their pup left at home alone. Our dog daycare service ensures your dog gets the exercise, and socialization they need.</p>
-      <a href='https://happycamperspetcamp.ie/services/dog-daycare/'>
+      <a href='<?php echo get_site_url();?>/dog-daycare/'>
         <button class="btn-clear">Learn more  <i class="fa fa-arrow-right"></i></button>
       </a>
     </div>
@@ -95,7 +95,7 @@ get_header();
       <h2>Dog Grooming</h2>
       <img src="<?php bloginfo('template_directory'); ?>/images/grooming.jpg" alt="dog_grooming"/>
       <p>Treat your pup to a spa day! Our in-house dog grooming service offers bathing, trimming, and styling. Get summer ready with a trim  or freshen up with a wash during daycare.</p>
-      <a href='https://happycamperspetcamp.ie/services/dog-grooming/'>
+      <a href='<?php echo get_site_url();?>/dog-grooming/'>
         <button class="btn-clear">Learn more  <i class="fa fa-arrow-right"></i></button>
       </a>
     </div>
@@ -109,12 +109,12 @@ get_header();
         </div>
         <div class="flex-child">
           <h2 class="sub">A Home from Home for your Precious Pet</h2>
-          <p>Happy Campers offers premium pet care services. Our different approach gives our campers the opportunity to mix with similar pup pals. Letting them play the day away, staying healthy and happy. We are proud to offer themed indoor playrooms and spacious paved/grassy outdoor areas for them to stretch their legs and get some fresh air.</p>
+          <p>Happy Campers offers premium pet care services. Our different approach to doggy care gives our campers the opportunity to mix with similar pup pals. Letting them play the day away, staying healthy and happy. We are proud to offer themed indoor playrooms and spacious paved/grassy outdoor areas for them to stretch their legs and get some fresh air.</p>
           <p>We are conveniently located just outside Carlow town servicing the greater Carlow area for our doggy daycare service. A minutes drive from the M9 motorway, one hour from Dublin and Waterford makes us a great doggy holiday destination for the Leinster region.</p>
           <div class="well">
-            <p class="sub">Ready for a barking good time? Call us at <a href="tel:(00353)852432902">085 2432902</a> to find out more about our pet care services.</p>
+            <p>Ready for a barking good time? Call us at <a href="tel:(00353)852432902">085 2432902</a> to find out more about our pet care services.</p>
             <div class="flex-child">
-                <a href="<?php echo get_site_url();?>/about/take-a-tour/">
+                <a href="<?php echo get_site_url();?>/make-a-reservation/">
                     <button class="btn-huge">RESERVE YOUR FREE TRIAL DAY</button>
                 </a>
             </div>
@@ -160,7 +160,7 @@ get_header();
             </blockquote>
             <div class="flex-child">
               <p class="sub">Check out more reviews on our facebook page.</p>
-              <a href="https://www.facebook.com/ashtreepethotel/"></a><button class="btn center">Read Reviews</button></a>
+              <a href="https://www.facebook.com/ashtreepethotel/"><button class="btn center">Read Reviews</button></a>
             </div>
           </div>
         </div>

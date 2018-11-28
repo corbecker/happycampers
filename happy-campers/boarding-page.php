@@ -63,7 +63,15 @@ get_header('services');
                             <td>€20</td>
                         </tr>
                         <tr>
+                            <td>Weekly Rate (1 day free)</td>
+                            <td>€120</td>
+                        </tr>
+                        <tr>
                             <td>Extra Half Day (Cost of Daycare)</td>
+                            <td>€15</td>
+                        </tr>
+                        <tr>
+                            <td>Additional dog from same family</td>
                             <td>€15</td>
                         </tr>
                     </tbody>
@@ -93,7 +101,7 @@ get_header('services');
                 <p>Before your dogs first stay with us we provide a free trial day. It is encouraged as it familiarises them with us, the other doggies and the space. It also reassures them that you will be coming back for them as they will have been dropped off and collected once before the longer stay.</p>
                 <div class="center"><h2 class="paw-title" id="rates">Reservations</h2></div>
                 <div class="flex-child">
-                    <a href="<?php echo get_site_url();?>/about/take-a-tour/">
+                    <a href="<?php echo get_site_url();?>/make-a-reservation">
                         <button class="btn-huge">Make a Reservation</button>
                     </a>
                 </div>

@@ -859,6 +859,15 @@ img.aligncenter {
     text-align: center;
     letter-spacing: 1.2px; }
 
+.form-well {
+  background-color: #7fa8c5;
+  padding: 40px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  width: 100%; }
+
+.space-bottom {
+  margin-bottom: 40px; }
+
 /*most phones*/
 @media only screen and (max-width: 1000px) {
   .flex-parent {
@@ -1199,7 +1208,7 @@ footer {
   display: block;
   width: 100%;
   background-color: rgba(246, 199, 69, 0.84);
-  padding: 40px;
+  padding: 20px;
   cursor: pointer;
   border: 0px;
   font-weight: 1000;

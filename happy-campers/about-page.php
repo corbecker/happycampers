@@ -39,7 +39,7 @@ get_header('about');
             <p>We foster an environment of enjoyment and encourage good behaviour. Our guests will experience many benefits: dog/human social skills development, reduced nervousness, increased fitness, house training improvements, less destructive behaviours, less separation anxiety and overall a healthier & happier dog.</p>
             <h2 class="paw-title">Ready to Get the Ball Rolling?</h2>
             <div class="flex-child">
-                <a href="<?php echo get_site_url();?>/about/take-a-tour/">
+                <a href="<?php echo get_site_url();?>/about/make-a-reservation/">
                     <button class="btn-huge">Make a Reservation</button>
                 </a>
             </div>

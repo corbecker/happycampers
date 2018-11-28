@@ -17,7 +17,7 @@
             </ul>
             <ul class="menu">
                 <li class="icon"><a href="https://www.facebook.com/ashtreepethotel/"><i class="fa fa-facebook-square icon" style="font-size:30px;"></i></a></li>
-                <li class="icon"><a href="https://www.instagram.com/aleidas_pet_hotel/"><i class="fa fa-instagram icon" style="font-size:30px;"></i></a></li>
+                <li class="icon"><a href="https://www.instagram.com/happycampershotel/"><i class="fa fa-instagram icon" style="font-size:30px;"></i></a></li>
                 <?php
                 wp_nav_menu(
                     array(
