@@ -7,9 +7,9 @@
     } else if (document.getElementById("global-menu")) {
       var nav = document.querySelector("mob-nav");
     }
-
     nav.classList.toggle("show");
   }
+
   if (document.querySelector(".toggle")) {
     document.querySelector(".toggle").addEventListener("click", classToggle);
   }
@@ -23,6 +23,26 @@
     document.querySelector(".close-btn").addEventListener("click", function() {
       document.querySelector(".mob-nav").classList.toggle("show");
     });
+  }
+
+  if (document.querySelector("#new-button")) {
+    document.querySelector("#new-button").addEventListener("click", function() {
+      document.querySelector("#returning").classList.remove("visible");
+      document.querySelector("#new").classList.add("visible");
+      document.querySelector("#new-button").classList.add("clicked");
+      document.querySelector("#returning-button").classList.remove("clicked");
+    });
+  }
+
+  if (document.querySelector("#returning-button")) {
+    document
+      .querySelector("#returning-button")
+      .addEventListener("click", function() {
+        document.querySelector("#new").classList.remove("visible");
+        document.querySelector("#returning").classList.add("visible");
+        document.querySelector("#returning-button").classList.add("clicked");
+        document.querySelector("#new-button").classList.remove("clicked");
+      });
   }
 
   var todaysDate = new Date();

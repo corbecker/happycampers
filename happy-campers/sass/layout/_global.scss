@@ -263,6 +263,20 @@ img.aligncenter {
   }
 }
 
+.center-text {
+  text-align: center;
+}
+
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.visible {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}
+
 @media only screen and (max-width: 720px) {
   .table-style {
     thead {

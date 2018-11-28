@@ -86,7 +86,7 @@ get_header();
     <div class="feature">
       <h2>Dog Daycare</h2>
       <img src="<?php bloginfo('template_directory'); ?>/images/daycare_2.jpg" alt="dog_daycare"/>
-      <p>Doggy Daycare is the answer for pet parents that don't want their pup left at home alone. Our dog daycare service ensures your dog is gets the exercise, and socialization they need.</p>
+      <p>Doggy Daycare is the answer for pet parents that don't want their pup left at home alone. Our dog daycare service ensures your dog gets the exercise, and socialization they need.</p>
       <a href='https://happycamperspetcamp.ie/services/dog-daycare/'>
         <button class="btn-clear">Learn more  <i class="fa fa-arrow-right"></i></button>
       </a>
