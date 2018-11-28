@@ -68,6 +68,25 @@ get_header('services');
                         </tr>
                     </tbody>
                 </table>
+                <table class="table-style">
+                    <thead>
+                        <tr>
+                            <td>Other Boarding Services</td>
+                            <td>Price</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cat Boarding</td>
+                            <td>€12</td>
+                        </tr>
+                        <tr>
+                            <td>Small Pet Boarding</td>
+                            <td>€8</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>* Discounted rates may apply for multiple pet bookings or long term stays.</p>
                 <h2 class="sub">All Inclusive Rates</i></h2>
                 <p>Our 24 hour boarding rates are all inclusive. Our guests are given breakfast and dinner, we encourage bringing their own food to avoid any upset tummy's but food can be provided. Dietary and medication needs will be catered for by our experienced staff. All overnight boarding guests will join in on the daycare fun every day. After a day of activities all the pooches are tucked into bed and given a bedtime treat. Feel free to bring along any creature comforts (blankets, jumpers etc) that will remind them of home and help them settle in.</p>
                 <h2 class="sub">Trial Day</i></h2>

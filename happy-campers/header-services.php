@@ -2,7 +2,7 @@
 <nav class="sub-navigation">
     <div>
         <ul class="toggle">
-            <li class="fa fa-bars"></li>
+            <li class="fa fa-bars" style="font-size:30px;"></li>
         </ul>
         <?php
         wp_nav_menu(

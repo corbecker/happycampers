@@ -1,11 +1,11 @@
 .testimonials-container {
-  -webkit-transform: translateY(-50px);
-  transform: translateY(-50px);
+  margin-top: 40px;
   .testimonials {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     padding-top: 30px;
+    padding-bottom: 30px;
     blockquote {
       padding: 20px;
       position: relative;
@@ -54,3 +54,6 @@
     }
   }
 }
+
+
+
