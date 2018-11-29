@@ -6,13 +6,13 @@ get_header('about');
 <div class="main-general">
   <div class="container">
     <div class="content">
-      <div class="center"><h1 class="paw-title"><?php single_post_title() ?></h1></div>
+      <div class="center"><h1 class="paw-title center-text"><?php single_post_title() ?></h1></div>
       <div class="flex-parent">
         <div class="flex-child">
           <img src="<?php bloginfo('template_directory'); ?>/images/dog-kennels-ireland.jpg" alt="dog boarding ireland"/>
         </div>
         <div class="flex-child">
-          <div class="center"><h2 class="paw-title">Happy Campers Pet Hotel Ireland</h2></div>
+          <div class="center"><h2 class="paw-title center-text">Happy Campers Pet Hotel Ireland</h2></div>
           <h2 class="sub">Premium Boarding, Doggy Daycare & More</h2>
           <p>Happy Campers is a 1000 square foot family run luxury pet hotel in the sunny south east of Ireland just outside Carlow town. We offer a home from home environment for your pet. We are a family of animal lovers and have been caring for pets all our lives. You can enjoy peace of mind while you are away and know your furry friend is getting the best pet care service possible.</p>
           <div class="flex-parent">

@@ -1,6 +1,15 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130037221-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-130037221-1');
+    </script>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
@@ -16,7 +25,7 @@
                 </li>
             </ul>
             <ul class="menu">
-                <li class="icon"><a href="https://www.facebook.com/ashtreepethotel/"><i class="fa fa-facebook-square icon" style="font-size:30px;"></i></a></li>
+                <li class="icon"><a href="https://www.facebook.com/happycamperspethotel/"><i class="fa fa-facebook-square icon" style="font-size:30px;"></i></a></li>
                 <li class="icon"><a href="https://www.instagram.com/happycampershotel/"><i class="fa fa-instagram icon" style="font-size:30px;"></i></a></li>
                 <?php
                 wp_nav_menu(
@@ -36,13 +45,8 @@
             <ul class="toggle-nav">
                 <li><i class="fa fa-bars" style="font-size:30px;"></i></li>
             </ul>
-            <button class="btn">
-                Reservations
-            </button>
-            <button class="btn-clear">
-                <a href="tel:(00353)852432902"><i class="fa fa-phone" style="font-size:20px;"></i><span>Call Us</span></a>
-            </button>
-            
+            <a href="<?php echo get_site_url();?>/make-a-reservation/"><button class="btn">Reservations</button>
+            <a href="tel:(00353)852432902"><button class="btn-clear"><i class="fa fa-phone" style="font-size:20px;"></i> <span>Call Us</span></button></a>
         </nav>
         <div class="mob-nav">
             <nav>

@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Lato");
+
+@font-face {
+  font-family: questrian;
+  font-display: auto;
+  src: url(./font/Questrian.ttf.woff);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -7,74 +14,50 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 1.8rem;
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -moz-font-feature-settings: "liga" on;
   color: rgba(0, 0, 0, 0.84);
+  letter-spacing: 0.0625em;
 }
 
-@font-face {
-  font-family: questrian;
-  src: url(./font/Questrian.ttf.woff);
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  margin: 1rem 0 1rem 0;
 }
 
 h1 {
-  font-size: 4rem;
   font-family: questrian;
-  padding-bottom: 20px;
+  font-size: 3.6rem;
 }
 
 h2 {
-  font-size: 3.6rem;
-  margin-bottom: 20px;
-  font-weight: 400;
-  font-family: questrian;
+  font-size: 2.4rem;
+  &.alt {
+    font-family: questrian;
+    font-size: 2.8rem;
+  }
 }
 
 h3 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-  font-weight: 400;
-  font-family: questrian;
+  font-size: 2.1rem;
 }
 
 p {
-  font-weight: 300;
-  font-size: 1.8rem;
   text-align: justify;
-  line-height: 1.4;
-  padding-bottom: 20px;
-}
-
-caption {
-  font-size: 1.4rem;
+  margin: 0 0 2rem 0;
 }
 
 a {
   color: rgba(0, 0, 0, 0.84);
 }
 
-/*most phones*/
-@media only screen and (max-width: 720px) {
-  h1 {
-    font-size: 2.8rem;
-    font-family: questrian;
-  }
-
-  h2 {
-    font-size: 2.4rem;
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-family: questrian;
-  }
-
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-family: questrian;
-  }
+.center-text {
+  text-align: center;
 }
 
 .icon {
@@ -84,9 +67,33 @@ a {
   }
 }
 
-.sub {
-  font-family: "Lato", sans-serif;
-  font-weight: 800;
-  font-size: 2.2rem;
-  margin-bottom: 10px;
+.paw-title {
+  text-align: center;
+  &:before {
+    font-family: FontAwesome;
+    content: "\f1b0";
+    color: #e1eef0;
+    margin-right: 10px;
+  }
+  &:after {
+    font-family: FontAwesome;
+    content: "\f1b0";
+    color: #e1eef0;
+    margin-left: 10px;
+  }
+}
+
+/*phones*/
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
 }

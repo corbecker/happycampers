@@ -79,5 +79,3 @@ add_action('widgets_init', 'widgetsInit');
 require_once('tabs-shortcode.php');
 require_once('hours-shortcode.php');
 require_once('location-shortcode.php');
-require_once('paws-shortcode.php');
-require_once('testimonials-shortcode.php');

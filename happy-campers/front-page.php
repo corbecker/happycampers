@@ -1,4 +1,5 @@
 <?php
+/* Template Name: Home Page*/
 get_header();
 ?>
 <div class="keyart" id="parallax">
@@ -17,9 +18,7 @@ get_header();
 <div class="cta-section">
   <div class="cta-section container">
     <div class="cta-area btn-area">
-      <a href="<?php echo get_site_url();?>/take-a-tour/">
-        <button class="btn">Take a Tour</button>
-      </a>
+      <a href="<?php echo get_site_url();?>/take-a-tour/" class="btn">Take a Tour</a>
       <a href="<?php echo get_site_url();?>/make-a-reservation/">
         <button class="btn">Reservations</button>
       </a>
@@ -76,7 +75,7 @@ get_header();
 <div class="main">
   <section class="features container">
     <div class="feature">
-      <h2>Dog Boarding</h2>
+      <h2 class="alt center-text">Dog Boarding</h2>
       <img src="<?php bloginfo('template_directory'); ?>/images/boarding_2.jpg" alt="dog_boarding"/>
       <p>Our overnight boarding service provides a home from home for your furry friend. Unlike traditional dog kennels, most of our guests sleep together. It's like a doggy slumber party.</p>
       <a href='<?php echo get_site_url();?>/dog-boarding/'>
@@ -84,7 +83,7 @@ get_header();
       </a>
     </div>
     <div class="feature">
-      <h2>Dog Daycare</h2>
+      <h2 class="alt center-text">Dog Daycare</h2>
       <img src="<?php bloginfo('template_directory'); ?>/images/daycare_2.jpg" alt="dog_daycare"/>
       <p>Doggy Daycare is the answer for pet parents that don't want their pup left at home alone. Our dog daycare service ensures your dog gets the exercise, and socialization they need.</p>
       <a href='<?php echo get_site_url();?>/dog-daycare/'>
@@ -92,7 +91,7 @@ get_header();
       </a>
     </div>
     <div class="feature">
-      <h2>Dog Grooming</h2>
+      <h2 class="alt center-text">Dog Grooming</h2>
       <img src="<?php bloginfo('template_directory'); ?>/images/grooming.jpg" alt="dog_grooming"/>
       <p>Treat your pup to a spa day! Our in-house dog grooming service offers bathing, trimming, and styling. Get summer ready with a trim  or freshen up with a wash during daycare.</p>
       <a href='<?php echo get_site_url();?>/dog-grooming/'>
@@ -103,7 +102,7 @@ get_header();
   <div class="card">
     <div class="container">
       <div class="flex-parent">
-        <div class="center"><h2 class="paw-title">Pet Hotel Ireland</h2></div>
+        <div class="center"><h1 class="paw-title">Pet Hotel Ireland</h1></div>
         <div class="flex-child">
           <img src="<?php bloginfo('template_directory'); ?>/images/dog-daycare-facility-carlow.jpg" alt="dog boarding ireland"/>
         </div>
@@ -160,7 +159,7 @@ get_header();
             </blockquote>
             <div class="flex-child">
               <p class="sub">Check out more reviews on our facebook page.</p>
-              <a href="https://www.facebook.com/ashtreepethotel/"><button class="btn center">Read Reviews</button></a>
+              <a href="https://www.facebook.com/happycamperspethotel/reviews/"><button class="btn center">Read Reviews</button></a>
             </div>
           </div>
         </div>

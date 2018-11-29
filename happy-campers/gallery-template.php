@@ -21,7 +21,7 @@ add_filter('use_default_gallery_style', '__return_false');
             <div class="flex-parent">
                 <div class="flex-child">
                     <h2 class="paw-title">Like what you see?</h2>
-                    <a href="<?php echo get_site_url();?>/about/make-a-reservation/">
+                    <a href="<?php echo get_site_url();?>/make-a-reservation/">
                       <button class="btn-huge"> Make a Reservation</button>
                     </a>
                     <br>
@@ -42,7 +42,7 @@ add_filter('use_default_gallery_style', '__return_false');
     </div>
 </div>
 
-<script type="text/javascript">
+<script>
     //get images in gallery into an array (wordpress function)
     var images = <?php echo json_encode(get_post_gallery_images($post)) ?> 
     var lb = document.querySelector(".lightbox");

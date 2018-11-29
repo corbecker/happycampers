@@ -25,10 +25,10 @@ get_header();
         <h2 class="paw-title">Select a Service</h2>
         <div class="flex-parent">
           <div class="flex-child-half">
-            <a href=""><button class="btn-huge blue">Day Care  <i class="fa fa-arrow-right"></i></button></a>
+            <a href="<?php echo get_site_url();?>/make-a-reservation/new-daycare-reservation"><button class="btn-huge blue">Day Care  <i class="fa fa-arrow-right"></i></button></a>
           </div>
           <div class="flex-child-half">
-            <a href=""><button class="btn-huge blue">Boarding  <i class="fa fa-arrow-right"></i></button></a>
+            <a href="<?php echo get_site_url();?>/make-a-reservation/new-boarding-reservation"><button class="btn-huge blue">Boarding  <i class="fa fa-arrow-right"></i></button></a>
           </div>
         </div>
       </div>
@@ -36,10 +36,10 @@ get_header();
         <h2 class="paw-title">Select a Service</h2>
         <div class="flex-parent">
           <div class="flex-child-half">
-            <a href=""><button class="btn-huge blue">Dog Day Care  <i class="fa fa-arrow-right"></i></button></a>
+            <a href="<?php echo get_site_url();?>/make-a-reservation/dog-day-care-reservation"><button class="btn-huge blue">Dog Day Care  <i class="fa fa-arrow-right"></i></button></a>
           </div>
           <div class="flex-child-half">
-            <a href=""><button class="btn-huge blue">Pet Boarding  <i class="fa fa-arrow-right"></i></button></a>
+            <a href="<?php echo get_site_url();?>/make-a-reservation/pet-boarding-reservation"><button class="btn-huge blue">Pet Boarding  <i class="fa fa-arrow-right"></i></button></a>
           </div>
         </div>
       </div>

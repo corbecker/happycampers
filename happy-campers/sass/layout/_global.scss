@@ -158,10 +158,38 @@ img.aligncenter {
 }
 
 .form-well {
-  background-color: #7fa8c5;
-  padding: 40px;
+  background-color: #2e844f;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  padding: 10px 0 10px 0;
   width: 100%;
+  color: white;
+  .parent {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(250px, 1fr)) [auto-fill];
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  label {
+    max-width: 100% !important;
+  }
+  form {
+    br {
+      display: none !important;
+    }
+    label {
+      margin: 10px 20px 10px 20px !important;
+    }
+    input {
+      max-width: 100% !important;
+    }
+    input[type="submit"] {
+      margin: 10px 20px 10px 20px;
+    }
+    p {
+      margin: 10px 20px 10px 20px;
+    }
+  }
 }
 
 .space-bottom {
@@ -185,24 +213,6 @@ img.aligncenter {
   .flex-child {
     max-width: 100%;
     padding: 10px;
-  }
-}
-
-.paw-title {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  &:before {
-    font-family: FontAwesome;
-    content: "\f1b0";
-    color: #e1eef0;
-    margin-right: 10px;
-  }
-  &:after {
-    font-family: FontAwesome;
-    content: "\f1b0";
-    color: #e1eef0;
-    margin-left: 10px;
   }
 }
 
@@ -309,6 +319,16 @@ img.aligncenter {
         width: 35%;
         text-align: center;
       }
+    }
+  }
+
+  .paw-title {
+    text-align: center;
+    &:before {
+      display: none;
+    }
+    &:after {
+      display: none;
     }
   }
 }

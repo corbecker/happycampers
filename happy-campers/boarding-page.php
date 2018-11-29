@@ -6,7 +6,7 @@ get_header('services');
 <div class="main-general">
     <div class="container">
         <div class="content">
-            <div class="center"><h1 class="paw-title"><?php single_post_title() ?></h1></div>
+            <div class="center"><h1 class="paw-title center-text"><?php single_post_title() ?></h1></div>
             <div class="flex-parent">
                 <div class="flex-child-half"><img src="http://192.168.1.113:8888/happycampers/wp-content/uploads/2018/10/DSC09001.jpg" alt="dog boarding ireland"/></div>
                 <div class="flex-child-half"><h2 class="sub">Trustworthy Pet Care</h2><p>Our Pet Hotel offers you peace of mind while you are away, knowing your dog is being looked after in a fun, safe and nurturing environment.</p>
@@ -45,7 +45,7 @@ get_header('services');
                     <div class="flex-child-half"><img src="http://192.168.1.113:8888/happycampers/wp-content/uploads/2018/10/DSC08945.jpg" alt="pet hotel nursery suite" />
                     </div>
                 </div>
-                <div class="center"><h2 class="paw-title" id="rates">Pricing Info</h2></div>
+                <div class="center"><h2 class="paw-title center-text" id="rates">Pricing Info</h2></div>
                 <table class="table-style">
                     <thead>
                         <tr>
@@ -99,7 +99,7 @@ get_header('services');
                 <p>Our boarding rates are all inclusive. Guests are given breakfast and dinner, we encourage bringing their own food to avoid any upset tummy's but food can be provided. Dietary and medication needs will be catered for by our experienced staff. All overnight boarding guests will join in on the daycare fun every day. After a day of activities all the pooches are tucked into bed and given a bedtime treat. Feel free to bring along any creature comforts (blankets, jumpers etc) that will remind them of home and help them settle in.</p>
                 <h2 class="sub">Trial Day</i></h2>
                 <p>Before your dogs first stay with us we provide a free trial day. It is encouraged as it familiarises them with us, the other doggies and the space. It also reassures them that you will be coming back for them as they will have been dropped off and collected once before the longer stay.</p>
-                <div class="center"><h2 class="paw-title" id="rates">Reservations</h2></div>
+                <div class="center"><h2 class="paw-title center-text" id="rates">Reservations</h2></div>
                 <div class="flex-child">
                     <a href="<?php echo get_site_url();?>/make-a-reservation">
                         <button class="btn-huge">Make a Reservation</button>
