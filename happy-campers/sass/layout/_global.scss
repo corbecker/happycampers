@@ -1,6 +1,5 @@
 .main {
   background-color: $light-blue;
-  /* background-image: url("images/topography.svg");*/
   position: relative;
   padding-bottom: 3rem;
 }
@@ -24,15 +23,18 @@
   margin: auto;
 }
 
+.middle {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
 .location {
   .icon {
     color: $casablanca;
     margin-right: 10px;
   }
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
   span {
     line-height: 1.3;
   }
@@ -114,31 +116,6 @@ img.aligncenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-/*flexbox layout*/
-.flex-parent {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  .flex-child-half {
-    width: 50%;
-    padding: 20px;
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
-  .flex-child {
-    max-width: 70%;
-    margin: auto;
-    padding-top: 20px;
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
 }
 
 .well {
@@ -307,13 +284,15 @@ img.aligncenter {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .col {
   flex: 1;
-  justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
+  &.padded {
+    padding: 0 2rem 0 2rem;
+  }
 }
 
 .left {
@@ -322,6 +301,10 @@ img.aligncenter {
 
 .thin {
   max-width: 1000px;
+}
+
+.main-general {
+  padding: 2rem 0 2rem 0;
 }
 
 @media only screen and (max-width: 720px) {

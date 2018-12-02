@@ -29,7 +29,7 @@
 .cta-section {
   background-color: #001a08;
   color: rgba(255, 255, 255, 0.7);
-  padding: 3rem 0 4rem 0;
+  padding: 3rem 0 6rem 0;
   position: relative;
 
   .btn-area {
@@ -42,7 +42,11 @@
   }
 
   .location {
-    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-width: 280px;
     span {
       line-height: 1.3;
     }

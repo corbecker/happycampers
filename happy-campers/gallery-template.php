@@ -18,16 +18,10 @@ add_filter('use_default_gallery_style', '__return_false');
                 <?php endwhile; ?>
                 <?php wp_reset_query(); ?>
             <?php endif; ?>
-            <div class="flex-parent">
-                <div class="flex-child">
+                <div class="vertical-row">
                     <h2 class="paw-title">Like what you see?</h2>
-                    <a href="<?php echo get_site_url();?>/make-a-reservation/">
-                      <button class="btn-huge"> Make a Reservation</button>
-                    </a>
-                    <br>
+                    <a href="<?php echo get_site_url();?>/make-a-reservation/" class="btn-huge"> Make a Reservation</a>
                 </div>
-            </div>
-            
             </div>
     </div>
 </div>

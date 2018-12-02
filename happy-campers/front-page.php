@@ -20,9 +20,9 @@ get_header();
       <a href="<?php echo get_site_url();?>/take-a-tour/" class="btn">Take a Tour</a>
       <a href="<?php echo get_site_url();?>/make-a-reservation/" class="btn">Reservations</a>
     </div>
-    <div class="col location">
-      <div class="icon"><i class="fa fa-map-pin"></i></div>
-      <a href="https://goo.gl/maps/8UiK4yK71QE2" target="_blank">
+    <div class="col vertical-row">
+      <div class="location">
+        <div class="icon"><span class="icon-location"></span></div>
         <div>
           <span>Happy Campers Pet Hotel</span>
           <br>
@@ -32,9 +32,9 @@ get_header();
           <br>
           <span>085 2432902</span>
           <br>
-          <span class="directions">Directions</span>
+          <a href="https://goo.gl/maps/8UiK4yK71QE2" target="_blank"><span class="directions">Directions</span></a>
         </div>
-      </a>
+      </div>
     </div>
     <div class="col hours">
       <table>

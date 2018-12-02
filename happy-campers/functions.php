@@ -18,7 +18,6 @@ add_action('after_setup_theme', 'happy_campers_setup');
  */
 function happy_campers_scripts()
 {
-    // wp_enqueue_style('load-fa', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
     wp_enqueue_style('happy-campers-style', get_stylesheet_uri());
 
@@ -72,10 +71,3 @@ function widgetsInit()
 }
 
 add_action('widgets_init', 'widgetsInit');
-
-// shortcodes
-
-    
-require_once('tabs-shortcode.php');
-require_once('hours-shortcode.php');
-require_once('location-shortcode.php');

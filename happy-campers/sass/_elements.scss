@@ -34,18 +34,17 @@
 
 .btn-huge {
   display: block;
-  width: 100%;
+  width: 60%;
   background-color: rgba(246, 199, 69, 0.84);
-  padding: 20px;
+  padding: 1rem;
   cursor: pointer;
   border: 0px;
-  font-weight: 1000;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
   transition: all 0.2s;
-  i {
-    color: black;
-  }
+  margin-bottom: 1rem;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   &:hover {
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px);

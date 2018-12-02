@@ -4,28 +4,9 @@
   background-position: top center;
   height: 200px;
   margin-top: 50px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   .container {
     height: 100%;
-  }
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: linear-gradient(to bottom right, #000, transparent);
-    opacity: 0;
-  }
-  h1 {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-family: "questrian";
-    color: $casablanca;
-    letter-spacing: 3px;
-    padding-left: 20px;
   }
 }
 .standard {
@@ -84,9 +65,6 @@
     display: flex;
     cursor: pointer;
     display: none;
-    li:before {
-      font-size: 30px;
-    }
   }
 }
 

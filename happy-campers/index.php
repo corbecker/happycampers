@@ -24,8 +24,6 @@ get_header();
 
         </main><!-- #main -->
     </div><!-- #primary -->
-<script>
-console.log("yahoo");
-</script>
+
 <?php
 get_footer();
