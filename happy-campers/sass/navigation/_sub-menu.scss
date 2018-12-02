@@ -46,7 +46,6 @@
   width: 100%;
   background-color: #d3d3d3;
   font-family: questrian;
-  font-size: 1.8rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1;
   flex-direction: column;
@@ -61,38 +60,33 @@
     & > .current-menu-item {
       background-color: rgba(0, 0, 0, 0.2);
     }
-  }
+    li {
+      display: flex;
+      padding: 10px;
+      justify-content: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      & > .sub-menu {
+        display: none;
+      }
 
-  li {
-    padding: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-    white-space: nowrap;
-    & > .sub-menu {
-      display: none;
+      a {
+        color: rgba(0, 26, 8, 0.8);
+        text-decoration: none;
+      }
     }
-
-    a {
-      color: rgba(0, 26, 8, 0.8);
-      text-decoration: none;
+    li:hover {
+      background-color: rgba(0, 0, 0, 0.2);
     }
-  }
-  li:hover {
-    background-color: rgba(0, 0, 0, 0.2);
   }
 
   .toggle {
     display: flex;
     cursor: pointer;
-    position: relative;
     display: none;
-  }
-}
-
-@media only screen and (max-width: 654px) {
-  .masthead {
-    /* margin-top: 90px;*/
+    li:before {
+      font-size: 30px;
+    }
   }
 }
 

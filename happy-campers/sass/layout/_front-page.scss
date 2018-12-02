@@ -1,93 +1,48 @@
-.features {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+.offset {
   -webkit-transform: translateY(-50px);
   transform: translateY(-50px);
-  align-items: center;
-
-  .feature {
-    background: white;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    max-width: 400px;
-    margin-bottom: 30px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 15px;
-    a {
-      display: inline-block;
-    }
-
-    img {
-      max-width: 100%;
-      transition: -webkit-transform 0.3s ease-out;
-      transition: transform 0.3s ease-out;
-      transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-    }
-    .btn-clear {
-      font-size: 1.8rem;
-      border-color: $dark-fern;
-      color: $dark-fern;
-      font-weight: 600;
-    }
-  }
-  p {
-    font-weight: 300;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 1.8rem;
-    text-align: justify;
-    line-height: 1.4;
-  }
 }
-a {
-  text-decoration: none;
+
+.feature {
+  background: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  max-width: 400px;
+  min-width: 380px;
+  padding: 0 2rem 2rem 2rem;
+  margin: auto;
+
+  img {
+    max-width: 100%;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  }
+  .btn-clear {
+    font-size: 1.8rem;
+    border-color: $dark-fern;
+    color: $dark-fern;
+    font-weight: 600;
+  }
 }
 
 .cta-section {
-  position: relative;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: space-around;
-  flex-flow: row wrap;
   background-color: #001a08;
   color: rgba(255, 255, 255, 0.7);
-  padding-bottom: 30px;
-  h3 {
-    font-family: questrian;
-    color: $casablanca;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-  }
-  .cta-area {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin-bottom: 30px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 15px;
-  }
+  padding: 3rem 0 4rem 0;
+  position: relative;
 
   .btn-area {
-    button {
+    a {
       width: 150px;
       font-size: 1.8rem;
-      margin-bottom: 10px;
+      text-align: center;
+      margin-bottom: 20px;
     }
   }
 
   .location {
-    .icon {
-      color: $casablanca;
-      margin-right: 10px;
-    }
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
+    min-width: 300px;
     span {
       line-height: 1.3;
     }
@@ -99,76 +54,74 @@ a {
       }
     }
   }
+}
 
-  .hours {
-    color: rgba(255, 255, 255, 0.7);
-    padding: 0;
-    padding-bottom: 15px;
+.hours {
+  table {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 14px;
+    border-collapse: collapse;
 
-    table {
-      width: 100%;
-      max-width: 300px;
-      min-width: 280px;
+    th {
+      font-weight: bold;
       text-align: center;
-      margin: 0 auto;
-      font-size: 14px;
-      border-collapse: collapse;
+      border-bottom: 1px solid $casablanca;
+      border-right: 1px solid $casablanca;
+      padding: 6px;
 
-      th {
-        font-weight: bold;
-        text-align: center;
-        border-bottom: 1px solid $casablanca;
-        border-right: 1px solid $casablanca;
-        padding: 6px;
-
-        &:last-child {
-          border-right: none;
-        }
+      &:last-child {
+        border-right: none;
       }
+    }
 
-      .opening td {
-        padding-top: 6px;
-      }
+    .opening td {
+      padding-top: 5px;
+    }
 
-      .hyphen {
-        line-height: 10px;
-        font-size: 13px;
-      }
+    .today {
+      background: rgba(253, 198, 9, 0.5);
+    }
 
-      .today {
-        background: rgba(253, 198, 9, 0.5);
-      }
+    .closing td {
+      padding-bottom: 5px;
+    }
 
-      .closing td {
-        padding-bottom: 6px;
-      }
+    td {
+      border-right: 1px solid $casablanca;
+      white-space: nowrap;
+      padding: 5px;
 
-      td {
-        border-right: 1px solid $casablanca;
-        padding: 6px;
-
-        &:last-child {
-          border-right: none;
-        }
+      &:last-child {
+        border-right: none;
       }
     }
   }
+}
 
-  /*small phones*/
-  @media only screen and (max-width: 360px) {
-    .btn-area {
-      display: none;
-    }
+blockquote {
+  padding: 20px;
+  position: relative;
+  max-width: 400px;
+  .stars {
+    color: $casablanca;
+    margin-bottom: 10px;
   }
+}
 
-  /*most phones*/
-  @media only screen and (max-width: 720px) {
-    .btn-area {
-      display: none;
-    }
+cite {
+  margin-top: 10px;
+  font-size: 1.6rem;
+}
+
+/*most phones*/
+@media only screen and (max-width: 720px) {
+  .btn-area {
+    display: none;
   }
-
-  /*ipad*/
-  @media only screen and (max-width: 1000px) {
+  .feature {
+    min-width: 300px;
   }
 }

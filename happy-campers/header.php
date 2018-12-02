@@ -1,14 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130037221-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <script type="text/javascript">
+    if (document.location.hostname.search("http://192.168.1.113:8888/happycampers/") !== -1) {
 
-      gtag('config', 'UA-130037221-1');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-130037221-1');
+
+    }
     </script>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,8 +27,8 @@
                 </li>
             </ul>
             <ul class="menu">
-                <li class="icon"><a href="https://www.facebook.com/happycamperspethotel/"><i class="fa fa-facebook-square icon" style="font-size:30px;"></i></a></li>
-                <li class="icon"><a href="https://www.instagram.com/happycampershotel/"><i class="fa fa-instagram icon" style="font-size:30px;"></i></a></li>
+                <li class="icon"><a href="https://www.facebook.com/happycamperspethotel/"><span class="icon-facebook2"></span></a></li>
+                <li class="icon"><a href="https://www.instagram.com/happycampershotel/"><span class="icon-instagram"></span></a></li>
                 <?php
                 wp_nav_menu(
                     array(
@@ -35,21 +37,21 @@
                     'container'      => 'false'
                     )
                 );
-                ?>
+                ?> 
             </ul>
             <ul>
-                <li class="phone"><a href="tel:(00353)852432902"><i class="fa fa-phone" style="font-size:30px;"></i><span>+353 85 2432902</span></a></li>
+                <li class="phone"><a href="tel:(00353)852432902"><span class="icon-mobile"></span><span>+353 85 2432902</span></a></li>
             </ul>
         </nav>
         <nav class="mobile-nav">
             <ul class="toggle-nav">
-                <li><i class="fa fa-bars" style="font-size:30px;"></i></li>
+                <li><span class="icon-bars"></span></li>
             </ul>
-            <a href="<?php echo get_site_url();?>/make-a-reservation/"><button class="btn">Reservations</button>
-            <a href="tel:(00353)852432902"><button class="btn-clear"><i class="fa fa-phone" style="font-size:20px;"></i> <span>Call Us</span></button></a>
+            <a href="<?php echo get_site_url();?>/make-a-reservation/" class="btn">Reservations</a>
+            <a href="tel:(00353)852432902" class="btn-clear"><span class="icon-mobile"></span><span>Call Us</span></a>
         </nav>
-        <div class="mob-nav">
-            <nav>
+        <div class="mob-menu">
+            <nav class="flex-grid">
                 <span class="close-btn"></span>
                 <?php
                 wp_nav_menu(
@@ -60,9 +62,9 @@
                     )
                 );
                 ?>
-                <ul class="contact-list">
-                    <li><a href="tel:(00353)852432902"><button class="btn-clear"><i class="fa fa-phone"></i><span>+353 85 2342902</span></button></a></li>
-                    <li><a href="https://goo.gl/maps/8UiK4yK71QE2" target="_blank"><button class="btn"><i class="fa fa-map-pin"></i>Get Directions</button></a></li>
+                <div class="contact-buttons">
+                    <a href="tel:(00353)852432902" class="btn-clear"><span class="icon-mobile"></span><span>+353 85 2342902</span></a>
+                    <a href="https://goo.gl/maps/8UiK4yK71QE2" target="_blank" class="btn"><span class="icon-location"></span><span>Get Directions</span></a>
                 <ul>
             </nav>
             

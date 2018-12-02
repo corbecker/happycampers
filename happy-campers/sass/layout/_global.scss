@@ -1,6 +1,6 @@
 .main {
-  background-color: #e1eef0;
-  background-image: url("images/topography.svg");
+  background-color: $light-blue;
+  /* background-image: url("images/topography.svg");*/
   position: relative;
   padding-bottom: 3rem;
 }
@@ -39,9 +39,13 @@
   a {
     .directions {
       color: $casablanca;
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
+}
+
+img {
+  max-width: 100%;
 }
 
 body {
@@ -139,21 +143,17 @@ img.aligncenter {
 
 .well {
   background-color: #e1eef0;
-  padding: 40px;
+  padding: 4rem;
   text-align: center;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   a {
-    text-decoration: underline;
-    color: $casablanca;
-    button {
-      text-decoration: none;
-      color: rgba(0, 0, 0, 0.8);
+    span {
+      text-decoration: underline;
+      color: $casablanca;
     }
   }
   p {
-    padding: 0;
     text-align: center;
-    letter-spacing: 1.2px;
   }
 }
 
@@ -260,8 +260,7 @@ img.aligncenter {
       line-height: 1.8;
     }
     li:before {
-      font-family: "FontAwesome";
-      content: "\f00c";
+      content: "\2714\0020";
       margin: 0 5px 0 -15px;
       color: #7fa8c5;
     }
@@ -275,8 +274,8 @@ img.aligncenter {
       line-height: 2;
     }
     li:before {
-      font-family: "FontAwesome";
-      content: "\f1b0";
+      font-family: "icomoon";
+      content: "\e900";
       margin: 0 15px 0 0px;
       color: #7fa8c5;
       font-size: 20px;
@@ -296,6 +295,33 @@ img.aligncenter {
 .visible {
   max-height: 500px;
   transition: max-height 0.5s ease-in;
+}
+
+.flex-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.vertical-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.col {
+  flex: 1;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.left {
+  align-self: flex-start;
+}
+
+.thin {
+  max-width: 1000px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -323,12 +349,15 @@ img.aligncenter {
   }
 
   .paw-title {
-    text-align: center;
     &:before {
       display: none;
     }
     &:after {
       display: none;
     }
+  }
+
+  .flex-grid {
+    display: block;
   }
 }

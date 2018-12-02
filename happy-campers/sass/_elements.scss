@@ -1,67 +1,32 @@
 .btn {
-  display: block;
   background-color: rgba(246, 199, 69, 0.84);
   padding: 10px;
   cursor: pointer;
-  border: 0px;
   transition: all 0.2s;
+  text-align: center;
+  line-height: 1.8rem;
   &:hover {
     -webkit-transform: translateY(-2px);
     transform: translateY(-2px);
   }
-}
-
-.close-btn {
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  width: 3.25em;
-  height: 3.25em;
-  cursor: pointer;
-}
-
-.close-btn:after,
-.close-btn:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 3px;
-  background-color: black;
-  top: 50%;
-  left: 50%;
-}
-
-.close-btn:before {
-  -webkit-transform: translate(-50%, -50%) rotate(45deg);
-  transform: translate(-50%, -50%) rotate(45deg);
-  width: 2.25em;
-}
-
-.close-btn:after {
-  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-  transform: translate(-50%, -50%) rotate(-45deg);
-  width: 2.25em;
+  i {
+    margin-left: 10px;
+  }
 }
 
 .card {
   background: white;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  margin-bottom: 30px;
-  padding: 20px;
+  margin-bottom: 3rem;
+  padding: 2rem;
 }
 
 .btn-clear {
-  display: block;
   background-color: rgba(255, 255, 255, 0.2);
   padding: 10px;
   color: rgba(255, 255, 255, 0.8);
-  cursor: pointer;
-  border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.8);
-  transition: all 0.2s;
   &:hover {
-    -webkit-transform: translateY(-2px);
-    transform: translateY(-2px);
     border-color: $casablanca;
     color: $casablanca;
   }

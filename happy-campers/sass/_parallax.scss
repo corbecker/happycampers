@@ -5,7 +5,7 @@
 
 .keyart {
   position: relative;
-  height: 550px;
+  height: 548px;
 }
 
 .keyart_layer {
@@ -19,34 +19,34 @@
 .keyart_layer.parallax {
   position: fixed;
 }
-#keyart-0 {
-  background-image: url("images/parallax_opt/parallax0@2x.png");
-  background-color: #8bd5ff;
+@media only screen and (min-width: 720px) {
+  #keyart-0 {
+    background-image: url("images/parallax_opt/parallax0@2x.png");
+    background-color: #8bd5ff;
+  }
+  #keyart-1 {
+    background-image: url("images/parallax_opt/parallax1@2x.png");
+  }
+  #keyart-2 {
+    background-image: url("images/parallax_opt/parallax2@2x.png");
+  }
+  #keyart-3 {
+    background-image: url("images/parallax_opt/parallax3@2x.png");
+  }
+  #keyart-4 {
+    background-image: url("images/parallax_opt/parallax5@2x.png");
+  }
+  #keyart-5 {
+    background-image: url("images/parallax_opt/parallax6@2x.png");
+  }
+  #keyart-6 {
+    background-image: url("images/parallax_opt/parallax7@2x.png");
+  }
+  #keyart-7 {
+    background-image: url("images/parallax_opt/parallax8@2x.png");
+  }
 }
-#keyart-1 {
-  background-image: url("images/parallax_opt/parallax1@2x.png");
-}
-#keyart-2 {
-  background-image: url("images/parallax_opt/parallax2@2x.png");
-}
-#keyart-3 {
-  background-image: url("images/parallax_opt/parallax3@2x.png");
-}
-#keyart-4 {
-  background-image: url("images/parallax_opt/parallax4@2x.png");
-}
-#keyart-5 {
-  background-image: url("images/parallax_opt/parallax5@2x.png");
-}
-#keyart-6 {
-  background-image: url("images/parallax_opt/parallax6@2x.png");
-}
-#keyart-7 {
-  background-image: url("images/parallax_opt/parallax7@2x.png");
-}
-#keyart-8 {
-  background-image: url("images/parallax_opt/parallax8@2x.png");
-}
+
 #logo {
   position: absolute;
   max-width: 400px;
@@ -65,13 +65,13 @@
   display: none;
   height: 400px;
   background-position: top center;
-  background-size: auto 400px;
+  background-size: auto 402px;
   width: 100%;
   position: absolute;
-  background-image: url("images/parallax_opt/mobile_background.jpg");
+  background-image: url("images/parallax_opt/mobile_bg.jpg");
 }
 
-@media only screen and (max-width: 654px) {
+@media only screen and (max-width: 720px) {
   .keyart {
     position: relative;
     height: 400px;

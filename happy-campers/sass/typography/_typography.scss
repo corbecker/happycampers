@@ -1,19 +1,59 @@
-@import url("https://fonts.googleapis.com/css?family=Lato");
-
 @font-face {
   font-family: questrian;
   font-display: auto;
   src: url(./font/Questrian.ttf.woff);
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("./font/icomoon.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-paw:before {
+  content: "\e900";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
 html {
   font-size: 62.5%;
 }
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Verdana, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -36,15 +76,12 @@ h1 {
 }
 
 h2 {
-  font-size: 2.4rem;
-  &.alt {
-    font-family: questrian;
-    font-size: 2.8rem;
-  }
+  font-size: 2.8rem;
+  font-family: questrian;
 }
 
 h3 {
-  font-size: 2.1rem;
+  font-size: 2.4rem;
 }
 
 p {
@@ -54,6 +91,11 @@ p {
 
 a {
   color: rgba(0, 0, 0, 0.84);
+  display: inline-block;
+  text-decoration: none;
+  span {
+    vertical-align: middle;
+  }
 }
 
 .center-text {
@@ -69,15 +111,16 @@ a {
 
 .paw-title {
   text-align: center;
+  font-family: questrian;
   &:before {
-    font-family: FontAwesome;
-    content: "\f1b0";
+    font-family: icomoon;
+    content: "\e900";
     color: #e1eef0;
     margin-right: 10px;
   }
   &:after {
-    font-family: FontAwesome;
-    content: "\f1b0";
+    font-family: icomoon;
+    content: "\e900";
     color: #e1eef0;
     margin-left: 10px;
   }
@@ -95,5 +138,13 @@ a {
 
   h3 {
     font-size: 2rem;
+  }
+  .paw-title {
+    &:before {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
   }
 }

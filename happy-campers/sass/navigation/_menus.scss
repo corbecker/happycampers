@@ -1,11 +1,12 @@
 .main-navigation {
+	height: 50px;
 	display: flex;
-	width: 100%;
+	justify-content: flex-end;
 	background-color: $dark-fern;
 	font-family: questrian;
-	justify-content: flex-end;
+	width: 100%;
 	font-size: 1.8rem;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 	position: fixed;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	z-index: 2;
@@ -18,87 +19,86 @@
 		text-decoration: none;
 		margin: 0;
 		padding: 0;
-		& > .current-menu-item,
+		&.current-menu-item,
 		.current-page-ancestor {
 			a {
 				color: $casablanca;
 			}
 		}
-	}
 
-	li {
-		padding: 10px;
-		display: flex;
-		align-items: center;
-		text-align: center;
-		text-transform: uppercase;
-		cursor: pointer;
-		white-space: nowrap;
-		& > .sub-menu {
-			display: none;
+		li {
+			padding: 10px;
+			text-align: center;
+			text-transform: uppercase;
+			cursor: pointer;
+			white-space: nowrap;
+			&.sub-menu {
+				display: none;
+			}
+
+			a {
+				color: rgb(255, 255, 255);
+				text-decoration: none;
+				i:before {
+					font-size: 30px;
+				}
+			}
 		}
-
-		a {
-			color: rgb(255, 255, 255);
+		li:hover {
+			a {
+				color: $casablanca;
+			}
+		}
+		&.home-button {
+			-webkit-clip-path: polygon(
+				100% 0,
+				95% 50%,
+				100% 100%,
+				0% 100%,
+				5% 50%,
+				0% 0%
+			);
+			clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+			white-space: nowrap;
 			text-decoration: none;
+			background-color: $potters-clay;
+			margin: 0 auto 0 40px;
+			-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+			padding: 0 20px 0 20px;
+			a {
+				font-size: 2.2rem;
+				color: $casablanca;
+				line-height: 0.7;
+				span {
+					color: white;
+					font-size: 1.5rem;
+					vertical-align: baseline;
+				}
+			}
+			li {
+				padding: 10px 0 5px 0;
+				&:hover {
+					background-color: rgba(255, 255, 255, 0);
+				}
+			}
 		}
 	}
-	li:hover {
-		a {
-			color: $casablanca;
-		}
-	}
+
 	.phone {
 		margin-right: 40px;
 		a {
 			display: flex;
-			align-items: center;
-			font-weight: 400;
-			font-size: 2rem;
 			color: rgba(255, 255, 255, 0.8);
 			span {
 				font-family: "Lato", sans-serif;
 				margin-left: 10px;
-				line-height: 1.8rem;
-				vertical-align: middle;
 			}
-		}
-	}
-
-	.home-button {
-		-webkit-clip-path: polygon(
-			100% 0,
-			95% 50%,
-			100% 100%,
-			0% 100%,
-			5% 50%,
-			0% 0%
-		);
-		clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
-		white-space: nowrap;
-		text-decoration: none;
-		background-color: $potters-clay;
-		margin-right: auto;
-		margin-left: 40px;
-		-webkit-transform: scale(1.2);
-		transform: scale(1.2);
-		padding: 0 20px 0 20px;
-		a {
-			font-size: 2.2rem;
-			color: $casablanca;
-			line-height: 0.9;
-			span {
-				color: white;
-				font-size: 1.5rem;
-			}
-		}
-		li:hover {
-			background-color: rgba(255, 255, 255, 0);
 		}
 	}
 }
 
-.mob-nav {
+.mob-menu {
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -106,22 +106,9 @@
 	z-index: 3;
 	display: none;
 	background-color: white;
-	align-items: flex-start;
 	nav {
-		width: 100%;
-		position: relative;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: flex-start;
-		height: 100%;
-		display: flex;
-		padding-top: 80px;
-		padding-left: 50px;
-		padding-right: 50px;
+		padding: 5rem;
 		ul {
-			display: flex;
-			flex-direction: column;
-			width: 100%;
 			list-style-type: none;
 			font-size: 2.2rem;
 			li {
@@ -137,49 +124,48 @@
 			}
 		}
 	}
-	.contact-list {
-		margin-top: auto;
-		margin-bottom: 20px;
-		margin-top: 10px;
-		font-size: 1.8rem;
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		flex-direction: row;
-		li {
-			display: flex;
-			justify-content: center;
-			border: none;
+	.contact-buttons {
+		a {
+			width: 100%;
 			text-align: center;
 		}
-		.btn {
-			i {
-				padding-right: 10px;
-				color: $casablanca;
-			}
-			color: white;
-			background-color: $dark-fern;
-			padding: 15px;
-		}
+
 		.btn-clear {
-			background-color: rgba(255, 255, 255, 0.2);
-			color: rgba(255, 255, 255, 0.8);
-			cursor: pointer;
 			border: 1px solid $dark-fern;
-			margin-bottom: 10px;
+			margin: 2rem 0 2rem 0;
 			color: $dark-fern;
-			padding: 15px;
-
+			line-height: 3rem;
 			span {
-				margin-left: 10px;
+				line-height: 3rem;
 			}
-
-			&:hover {
-				-webkit-transform: translateY(-0px);
-				transform: translateY(-0px);
-				border-color: $dark-fern;
-				color: $dark-fern;
-			}
+		}
+	}
+	.close-btn {
+		position: absolute;
+		top: 0.5em;
+		right: 0.5rem;
+		width: 3.25em;
+		height: 3.25em;
+		cursor: pointer;
+		&:after,
+		&:before {
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 3px;
+			background-color: black;
+			top: 50%;
+			left: 50%;
+		}
+		&:before {
+			-webkit-transform: translate(-50%, -50%) rotate(45deg);
+			transform: translate(-50%, -50%) rotate(45deg);
+			width: 2.25em;
+		}
+		&:after {
+			-webkit-transform: translate(-50%, -50%) rotate(-45deg);
+			transform: translate(-50%, -50%) rotate(-45deg);
+			width: 2.25em;
 		}
 	}
 }
@@ -203,45 +189,20 @@
 	}
 	li {
 		margin: 10px;
+		i:before {
+			font-size: 30px;
+		}
 	}
 	.toggle-nav {
 		margin-right: auto;
 		cursor: pointer;
 	}
-	.btn {
-		background-color: $dark-fern;
-		margin: 10px;
-		color: rgba(255, 255, 255, 0.8);
-		padding: 10px;
-		&:hover {
-			-webkit-transform: translateY(-0px);
-			transform: translateY(-0px);
-			border-color: $dark-fern;
-			color: white;
-		}
-	}
+
 	.btn-clear {
-		background-color: rgba(255, 255, 255, 0.2);
-		padding: 10px;
-		color: rgba(255, 255, 255, 0.8);
-		cursor: pointer;
-		border-radius: 2px;
-		border: 1px solid $dark-fern;
-		transition: all 0.2s;
-		margin: 10px;
 		color: $dark-fern;
-		a {
-			display: flex;
-			align-items: center;
-			span {
-				margin-left: 10px;
-			}
-		}
 		&:hover {
-			-webkit-transform: translateY(-0px);
-			transform: translateY(-0px);
-			border-color: $dark-fern;
 			color: $dark-fern;
+			border: white;
 		}
 	}
 }
@@ -270,8 +231,10 @@
 		.phone {
 			display: none;
 		}
-		.home-button {
-			margin: 0 auto;
+		ul {
+			&.home-button {
+				margin: 0 auto;
+			}
 		}
 	}
 }

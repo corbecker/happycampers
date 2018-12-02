@@ -16,40 +16,30 @@ footer {
   bottom: 0;
   width: 100%;
 
-  .footer-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-
-    .footer-widget {
-      text-align: center;
-      h3 {
-        color: $casablanca;
-        font-family: questrian;
-        letter-spacing: 2px;
+  .footer-widget {
+    h3 {
+      color: $casablanca;
+      font-family: questrian;
+    }
+    color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    min-width: 250px;
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        line-height: 1.5;
       }
+    }
+    a {
       color: rgba(255, 255, 255, 0.8);
-      margin: 20px;
-      min-width: 250px;
-      ul {
-        list-style: none;
-        padding: 0;
-        li {
-          line-height: 1.5;
-        }
-      }
-      li:before {
-        /* font-family: "FontAwesome";*/
-        /* content: "\f1b0";*/
-        /* margin: 0 5px 0 -15px;*/
-        /* color: $casablanca;*/
-      }
-      a {
-        color: rgba(255, 255, 255, 0.8);
+      &:hover {
+        color: $casablanca;
       }
     }
-    #footer-sidebar2 {
-      text-align: left;
-    }
+  }
+
+  #footer-sidebar2 {
+    text-align: left;
   }
 }
