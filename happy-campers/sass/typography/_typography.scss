@@ -87,6 +87,10 @@ h3 {
 p {
   text-align: justify;
   margin: 0 0 2rem 0;
+  a {
+    color: $casablanca;
+    text-decoration: underline;
+  }
 }
 
 a {

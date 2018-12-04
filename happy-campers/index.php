@@ -1,29 +1,27 @@
 <?php
 get_header();
 ?>
+<div class="masthead about"></div>
+<div class="main-general container">
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main">
-
-        <?php
-        if (have_posts()) :
-            if (is_home() && ! is_front_page()) :
-                ?>
-                <header>
-                    Header
-                </header>
-                <?php
-            endif;
-
-            /* Start the Loop */
+    <!-- Start the Loop. -->
+        <?php if (have_posts()) :
             while (have_posts()) :
-                the_post();
-            endwhile;
-        endif;
-        ?>
+                the_post(); ?>
 
-        </main><!-- #main -->
-    </div><!-- #primary -->
+        <!-- Stop The Loop (but note the "else:" - see next line). -->
+
+            <?php endwhile;
+        else : ?>
+        <!-- The very first "if" tested to see if there were any Posts to -->
+        <!-- display.  This "else" part tells what do if there weren't any. -->
+        <p><?php esc_html_e('Sorry, no posts matched your criteria.'); ?></p>
+
+
+        <!-- REALLY stop The Loop. -->
+        <?php endif; ?>
+
+</div><!-- #primary -->
 
 <?php
 get_footer();

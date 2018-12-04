@@ -3,6 +3,11 @@
   position: relative;
   padding-bottom: 3rem;
 }
+
+.main-general {
+  padding: 2rem;
+}
+
 .container {
   position: relative;
   max-width: 1400px;
@@ -131,6 +136,17 @@ img.aligncenter {
   }
   p {
     text-align: center;
+  }
+}
+
+.well-social {
+  background-color: #e1eef0;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  margin: 2rem;
+  a {
+    color: $casablanca;
   }
 }
 
@@ -285,6 +301,7 @@ img.aligncenter {
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
+  padding: 0 2rem 0 2rem;
 }
 
 .col {
@@ -301,10 +318,6 @@ img.aligncenter {
 
 .thin {
   max-width: 1000px;
-}
-
-.main-general {
-  padding: 2rem 0 2rem 0;
 }
 
 @media only screen and (max-width: 720px) {

@@ -1,111 +1,45 @@
 <?php
 /* Template Name: Home Page*/
 get_header();
+get_header('parallax');
 ?>
-<div class="keyart" id="parallax">
-  <div class="mobile-bg"></div>
-  <div class="keyart_layer parallax" id="keyart-0" data-speed="2"></div>
-  <div class="keyart_layer parallax" id="keyart-1" data-speed="5"></div>
-  <div class="keyart_layer parallax" id="keyart-2" data-speed="11"></div>
-  <div class="keyart_layer parallax" id="keyart-3" data-speed="16"></div>
-  <div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>
-  <div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>
-  <div class="keyart_layer parallax" id="keyart-6" data-speed="49"></div>
-  <div class="keyart_layer " id="keyart-7" data-speed="100"></div>
-  <div class="" id="logo" data-speed="100"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png" alt="logo"/></div>
-</div>
-<div class="cta-section">
-  <div class="flex-grid container">
-    <div class="col vertical-row btn-area">
-      <a href="<?php echo get_site_url();?>/take-a-tour/" class="btn">Take a Tour</a>
-      <a href="<?php echo get_site_url();?>/make-a-reservation/" class="btn">Reservations</a>
-    </div>
-    <div class="col vertical-row">
-      <div class="location">
-        <div class="icon"><span class="icon-location"></span></div>
-        <div>
-          <span>Happy Campers Pet Hotel</span>
-          <br>
-          <span>Church Rd Staplestown</span>
-          <br>
-          <span>Carlow, Ireland, R93XT38</span>
-          <br>
-          <span>085 2432902</span>
-          <br>
-          <a href="https://goo.gl/maps/8UiK4yK71QE2" target="_blank"><span class="directions">Directions</span></a>
-        </div>
-      </div>
-    </div>
-    <div class="col hours">
-      <table>
-        <colgroup>
-        <col id="mon">
-        <col id="tue">
-        <col id="wed">
-        <col id="thu">
-        <col id="fri">
-        <col id="sat">
-        <col id="sun">
-        </colgroup>
-        <tr>
-          <th>Mon</th>
-          <th>Tue</th>
-          <th>Wed</th>
-          <th>Thu</th>
-          <th>Fri</th>
-          <th>Sat</th>
-          <th>Sun</th>
-        </tr>
-        <tr class="opening">
-          <td>8-6</td>
-          <td>8-6</td>
-          <td>8-6</td>
-          <td>8-6</td>
-          <td>8-6</td>
-          <td>9-6</td>
-          <td>4-5</td>
-        </tr>
-      </table>
-    </div>
-  </div>
-</div>
-<div class="main">
+<main class="main">
   <section class="offset flex-grid container">
     <div class="col">
       <div class="feature">
-        <h2 class="paw-title">Dog Boarding</h2>
-        <img src="<?php bloginfo('template_directory'); ?>/images/dog-boarding-kennel-ireland.jpg" alt="dog boarding kennel ireland"/>
-        <p>Our overnight boarding service provides a home from home for your furry friend. Unlike traditional dog kennels, most of our guests sleep together. It's a doggy slumber party.</p>
+        <h2 class="paw-title">Pet Hotel</h2>
+        <img src="<?php bloginfo('template_directory'); ?>/images/dog-boarding-kennel-ireland.jpg" alt="happy campers pet hotel & boarding kennel ireland"/>
+        <p>Happy Campers Pet Hotel offers a home from home for your furry friend. As such, we aren't like traditional dog kennels. Most of our guests sleep in groups. It's like a doggy sleepover!</p>
         <a href='<?php echo get_site_url();?>/dog-boarding/' class="btn btn-clear">Learn more</a>
       </div>
     </div>
     <div class="col">
       <div class="feature">
-        <h2 class="paw-title">Dog Daycare</h2>
-        <img src="<?php bloginfo('template_directory'); ?>/images/doggy-daycare-carlow.jpg" alt="dog daycare services carlow"/>
-        <p>Doggy Daycare is the answer for pet parents that don't want their pup left at home alone. Our dog daycare service ensures your dog gets the exercise, and socialization they need.</p>
+        <h2 class="paw-title">Dog Day Care</h2>
+        <img src="<?php bloginfo('template_directory'); ?>/images/doggy-daycare-carlow.jpg" alt="happy campers pet hotel dog daycare services carlow"/>
+        <p>Dog day care at Happy Campers is the answer for pet parents that don't want their pup left alone during the day. It ensures your dog gets the exercise, and socialisation they need.</p>
         <a href='<?php echo get_site_url();?>/dog-daycare/' class="btn btn-clear">Learn more</a>
       </div>
     </div>
     <div class="col">
       <div class="feature">
         <h2 class="paw-title">Dog Grooming</h2>
-        <img src="<?php bloginfo('template_directory'); ?>/images/dog-grooming-carlow.jpg" alt="dog grooming services carlow"/>
-        <p>Treat your pup to a spa day! Our in-house dog grooming service offers bathing, trimming, and styling. Get summer ready with a trim  or freshen up with a wash during daycare.</p>
+        <img src="<?php bloginfo('template_directory'); ?>/images/dog-grooming-carlow.jpg" alt="happy campers pet hotel dog grooming services carlow"/>
+        <p>Treat your pup to a spa day! The in-house dog grooming service offers bathing, trimming, and styling. Get summer ready with a trim  or freshen up with a wash during day care.</p>
         <a href='<?php echo get_site_url();?>/dog-grooming/' class="btn btn-clear">Learn more</a>
       </div>
     </div>
   </section>
   <section class="card offset">
     <div class="flex-grid container">
-      <h1 class="paw-title">Pet Hotel Ireland</h1>
+      <h1 class="paw-title">Happy Campers Pet Hotel</h1>
       <div class="vertical-row thin">
-        <img src="<?php bloginfo('template_directory'); ?>/images/dog-daycare-facility-carlow.jpg" alt="dog kennel ireland"/>
+        <img src="<?php bloginfo('template_directory'); ?>/images/dog-daycare-facility-carlow.jpg" alt="happy campers pet hotel dog kennel ireland"/>
         <h3 class="left">A Home from Home for your Precious Pet</h3>
-        <p>Happy Campers offers premium pet care services. Our different approach to doggy care gives our campers the opportunity to mix with similar pup pals. Letting them play the day away, staying healthy and happy. We are proud to offer themed indoor playrooms and spacious paved/grassy outdoor areas for them to stretch their legs and get some fresh air.</p>
-        <p>We are conveniently located just outside Carlow town servicing the greater Carlow area for our doggy daycare service. A minutes drive from the M9 motorway, one hour from Dublin and Waterford makes us a great doggy holiday destination for the Leinster region.</p>
+        <p>Happy Campers Pet Hotel offers dog boarding, doggie day care, cattery, grooming and small pet boarding services. Our approach to pet care makes your pet feel like a member of the family. Campers stay in our home and pet hotel, with themed indoor, individually heated areas and private suites. As a result, they feel more at home. You and your pooch can relax while you are away, knowing they are in good hands, staying safe and having fun.</p>
+        <p>We are conveniently located just outside Carlow town servicing the greater Carlow area for our doggy day care service. A minutes drive from the M9 motorway, one hour from Dublin and Waterford makes us a great doggy holiday destination for the Leinster region.</p>
         <div class="well">
-          <p>Ready for a barking good time? Call us at <a href="tel:(00353)852432902"><span>085 2432902</span></a> to find out more about our pet care services.</p>
+          <p>Ready for a barking good time? Call us at <a href="tel:(00353)852432902"><span>085 2432902</span></a> to find out more about our services.</p>
           <a href="<?php echo get_site_url();?>/make-a-reservation/" class="btn">FREE TRIAL DAY</a>
         </div>
       </div>
@@ -139,6 +73,6 @@ get_header();
       </div>
     </div>
   </section>
-</div>
+</main>
 <?php
 get_footer();

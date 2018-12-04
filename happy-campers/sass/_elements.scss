@@ -32,6 +32,15 @@
   }
 }
 
+.button {
+  transition: all 0.2s;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  &:hover {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+}
+
 .btn-huge {
   display: block;
   width: 60%;
