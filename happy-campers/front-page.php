@@ -56,9 +56,9 @@ get_header('parallax');
           <blockquote>
             <div class="stars">★★★★★</div>
             <div class="testimonial">
-              <p>My dog loves This place! We found the hotel 8years ago when Rasti was a puppy and from that Day thats the only place I trust and I leave my dog in when I am away on Holidays! Highly recommend!!!!</p>
+              <p>Our dog goes here on her holidays she loves staying here and we are happy to leave her we can go away and know Mishka is well looked after.</p>
             </div>
-            <div class="author"><cite>- Magdalena Pydych</cite></div>
+            <div class="author"><cite>- Sylvia Keppel</cite></div>
           </blockquote>
           <blockquote>
             <div class="stars">★★★★★</div>
